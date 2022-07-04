@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M35| Link, List, Image</title>
+    <style>
+        .list-unorder {
+            list-style-type: square;
+        }
+        .list-order-roman {
+            list-style: upper-roman;
+        }
+        .list-order-decimal {
+            list-style: decimal;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        nav img {
+            width: 50px;
+            height: auto;
+            display: block;
+        }
+        
+        nav ul {
+            width: 80%;
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        nav ul li {
+            width: 25%;
+        }
+        nav ul li a {
+            display: block;
+            padding: 10px 30px;
+            text-align: center;
+
+        }
+        nav ul li a:hover {
+            background-color: red;
+            color: #fff;
+            font-weight: bold;
+        }
+        .logo {
+            width: auto;
+            height: 100px;
+        }
+        .section1 {
+            max-width: 600px;
+            margin: 0 auto;
+            border-bottom: 1px solid;
+        }
+        .section1_content img {
+            width: 100px;
+            float: left;
+            padding-right: 20px;
+        }
+        .section1_content p {
+            font-size: 20px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/logo2.png" alt="">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Destination</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>        
+    </header>
+    <main>
+        <section class="section1">
+            <h2>Section 1</h2>
+            <div class="section1_content">
+                <img src="images/javascript_jquery_1.png" alt="">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+            </div>
+        </section>
+    </main>
+    <p> Search by <a href="https://www.google.com/" title="https://www.google.com/" target="_blank">Google</a></p>
+    <p> Index in <a href="#">here</a></p>
+    <p> Text in <a href="chapter3/text.html">here</a></p>
+
+    <ul class="list-unorder">
+        <li>Item 1</li>
+        <li>Item 2
+            
+        </li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+
+    <ol class="list-order-roman">
+        <li>Item 1</li>
+        <li>Item 2
+            <ol class="list-order-decimal">
+                <li>Item child 1</li>
+                <li>Item child 2</li>
+                <li>Item child 3</li>
+                <li>Item child 4</li>
+            </ol>
+        </li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ol>
+    <ol start="5">
+        <li>item 5</li>
+        <li>item 6</li>
+    </ol>
+
+    <img src="images/javascript_jquery_1.png" class="logo" alt="FORCE FOR GOOD">
+</body>
+</html>

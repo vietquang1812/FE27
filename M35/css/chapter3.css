@@ -1,0 +1,27 @@
+.text-normal {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ff0000;
+    font-weight: 400;
+    font-style: italic;
+}
+.title-block {
+    font-size: 30px;
+    line-height: 1.2;
+    color: #0000ff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.cl-green {
+    color: green;
+    font-weight: 700;
+}
+
+#h1 span {
+    font-size: 50px;
+    color: aqua;
+}
+h1 span {
+    
+}
