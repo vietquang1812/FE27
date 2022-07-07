@@ -1,0 +1,47 @@
+.border{
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0px 4px 35px rgba(77, 77, 255, 0.15);
+    height: 656.05px;
+}
+h1{
+    width: 806px;
+    height: 72px;
+    font-family: 'Sora';
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 55.53px;
+    text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.48);
+    margin-top: 57px;
+    margin-left: 48px;
+    align-items: center;
+}
+.ke_ngang{
+    border: 1px solid #000000;
+    opacity: 0.1;
+    margin-top: 16.35px;
+    margin-bottom: 66.78px;
+    transform: rotate(-1deg);
+}
+.phan_than{
+    height: 369.03px;
+    width: 1068.6px;
+    margin-top: 60px;
+    margin-left: 37.09px;
+}
+.content1{
+    font-family: 'Sora';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    
+}
+.content2{
+    font-family: 'Sora';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+}
+.content2  p{
+    text-decoration: underline;
+}
