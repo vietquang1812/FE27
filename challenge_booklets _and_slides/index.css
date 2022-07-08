@@ -2,13 +2,11 @@
     border: 1px solid #FFFFFF;
     border-radius: 20px;
     box-shadow: 0px 4px 35px rgba(77, 77, 255, 0.15);
-    height: 656.05px;
     max-width: 1193px;
-    
+    margin: 0 auto;   
 }
 h1{
     width: 806px;
-    height: 72px;
     font-family: 'Sora';
     font-weight: 700;
     font-size: 45px;
@@ -26,8 +24,10 @@ h1{
     transform: rotate(-1deg);
 }
 .phan_than{
-    margin-top: 60px;
+    margin-top: 66px;
     margin-left: 37.09px;
+    margin-right: 87px;
+    margin-bottom: 60px;
 }
 .content1{
     font-family: 'Sora';
@@ -40,7 +40,7 @@ h1{
     font-family: 'Sora';
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 36px;  
 }
 .content2  p{
     text-decoration: underline;
