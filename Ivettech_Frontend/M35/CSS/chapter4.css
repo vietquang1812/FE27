@@ -1,0 +1,17 @@
+header {
+  background-color: blue;
+}
+#main {
+  background-color: red;
+}
+.footer {
+  background-color: yellow;
+}
+
+#main .s1 {
+  background-color:  black;
+}
+
+#main .s1 h3 {
+  color: yellow
+}
