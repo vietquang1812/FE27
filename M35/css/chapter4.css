@@ -5,13 +5,14 @@
     font-size: 40px;
     margin: 0;
     padding: 0;
+    text-shadow: 3px 4px 4px #000;
 }
 
 header {
     background-color: blue;
 }
 #main {
-    background-color: red;
+    /* background-color: red; */
 }
 .footer {
     background-color: yellow;
@@ -74,5 +75,45 @@ a[title] {
     color: #fff;
 }
 main>section {
-    
+    display: block;
+}
+.s1 {
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+.s2 {
+    background-color: red;
+    margin-top: 50px;
+}
+
+.border {
+    border: 5px dotted #000;
+    /* border-left-width: 4px;
+    border-left-style: dotted;
+    border-left-color: #000; */
+    margin-top: 10px;
+    border-radius: 50px 0 50px 0;
+    width: 30%;
+    height: 100px;
+    margin: 20px auto 10px;
+    padding: 50px;
+    color: #000;
+    /* background-color: blue;
+    background-image: url(../images/logo2.png);
+    background-repeat: no-repeat; */
+    /* background-position-x: center;
+    background-position-y: top; */
+    /* background-position: right top;
+    background-size: cover; */
+    /* background-image: linear-gradient(15deg,red, green, blue, aqua); */
+    background-image: linear-gradient(to right, red 0%,  red 30%, #fff 49%, #fff 51%, red 70%, red 100%);
+    background-image: -moz-linear-gradient(to right, red 0%,  red 30%, #fff 49%, #fff 51%, red 70%, red 100%);
+    background-image: -webkit-linear-gradient(to right, red 0%,  red 30%, #fff 49%, #fff 51%, red 70%, red 100%);
+    /* box-shadow: 0px 4px 35px rgba(77, 77, 255, 0.15); */
+    box-shadow: 0px 10px 10px 10px rgba(0,0,0,.5);
+}
+.w30_per {
+    width: 30vw;
+    color: #fff;
+    background-color: yellow;
 }
