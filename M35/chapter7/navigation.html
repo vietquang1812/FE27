@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M35: FE27 Navigation</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .menu {
+            margin: 0;
+            padding-left: 0;
+            clear: both;
+            list-style-type: none;
+
+        }
+        .menu:after {
+            clear: both;
+            content: '';
+        }
+        .menu.menu_hoz>.menu_item {
+            width: 20%;
+            float: left;
+        }
+        .menu_item {
+            width: 200px;
+            display: block;
+        }
+        .menu_item a {
+            display: block;
+            width: 100%;
+            font-size: 16px;
+            font-weight: 700;
+            color: #fff;
+            background-color: rgb(9, 121, 250);
+            border: 1px solid rgb(3, 3, 105);
+            text-align: center;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        .menu_item a:hover {
+            background-color: #fff;
+            color: rgb(3, 3, 105);
+        }
+        .has_child {
+            position: relative;
+        }
+        .has_child > .menu {
+            display: none;
+            position: absolute;
+            width: 100%;
+        }
+
+        .has_child > .menu li {
+            width: 100%;
+        }
+        .has_child:hover>.menu {
+            display: block;
+        }
+        .menu_ver {
+            margin-top: 20px;
+        }
+        .menu_hoz>.has_child>.menu>.has_child>.menu {
+            top: 0;
+            left: 100%;
+        }
+        .menu_ver .has_child>.menu {
+            top: 0;
+            left: 100%;
+        }
+        .clearfix:after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu menu_hoz">
+                <li class="menu_item"><a href="../index.html">Home</a></li>
+                <li class="menu_item"><a href="navigation.html">Speakers</a></li>
+                <li class="menu_item has_child">
+                    <a href="#">Products</a>
+                    <ul class="menu">
+                        <li class="menu_item"><a href="#">Women</a></li>
+                        <li class="menu_item has_child"><a href="#">Men</a>
+                            <ul class="menu">
+                                <li><a href="#">Category 1</a></li>
+                                <li><a href="#">Category 2</a></li>
+                                <li><a href="#">Category 3</a></li>
+                                <li><a href="#">Category 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu_item"><a href="#">Children</a></li>
+                        
+                    </ul>
+                </li>
+                <li class="menu_item"><a href="#">Contact Us</a></li>
+                <li class="menu_item"><a href="#">About Us</a></li>
+            </ul>
+            <div class="clearfix"></div>
+            <ul class="menu menu_ver">
+                <li class="menu_item"><a href="../index.html">Home</a></li>
+                <li class="menu_item"><a href="#">Speakers</a></li>
+                <li class="menu_item has_child">
+                    <a href="#">Products</a>
+                    <ul class="menu">
+                        <li class="menu_item has_child">
+                            <a href="#">Men</a>
+                            <ul class="menu">
+                                <li><a href="#">Category 1</a></li>
+                                <li><a href="#">Category 2</a></li>
+                                <li><a href="#">Category 3</a></li>
+                                <li><a href="#">Category 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu_item"><a href="#">Women</a></li>
+                        <li class="menu_item"><a href="#">Children</a></li>
+                        
+                    </ul>
+                </li>
+                <li class="menu_item"><a href="#">Contact Us</a></li>
+                <li class="menu_item"><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+</body>
+</html>
