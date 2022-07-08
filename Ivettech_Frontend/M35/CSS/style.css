@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+/**
+ * /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+ *
+ * @format
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;200;300;400;500;600&family=Sora:wght@100;200;300;400;500&display=swap');
 
 h2 {
 	color: red;
@@ -9,8 +15,8 @@ h2 {
 }
 .card {
 	max-width: 890px;
-  left: 235px;
-  top: 131px;
+	left: 235px;
+	top: 131px;
 	margin: 0 auto;
 	border: 3px solid #000;
 	box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
@@ -47,8 +53,98 @@ h2 {
 	padding-left: 40px;
 	font-size: 25px;
 	width: 567px;
-  margin: 0 14px;
+	margin: 0 14px;
 	font-weight: 400;
 	line-height: 36px;
 	font-family: 'Poppins', sans-serif;
+}
+
+.container {
+	position: relative;
+	width: 1382px;
+	background: #ffffff;
+	margin: 0 auto;
+	left: 200px;
+	top: 100px;
+}
+
+.container__header {
+	text-align: center;
+	width: 927px;
+}
+
+.container__header h1 {
+	font-style: normal;
+	font-weight: 700;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 78px;
+	line-height: 120%;
+	border: none;
+	color: #001b4b;
+	text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.75);
+}
+
+.container__content {
+	overflow: hidden;
+	display: inline-block;
+}
+
+.container__content .container__content-strike1 {
+	position: absolute;
+	width: 28.03px;
+	left: 255px;
+	top: 963px;
+	border: 5px solid #000000;
+	transform: matrix(0.05, 1, -1, 0.03, 0, 0);
+	display: flex;
+}
+
+.container__content-header1 h3,
+.container__content-header2 h3,
+.container__content-header3 h3 {
+	font-weight: 700;
+	font-family: 'Sora', sans-serif;
+	font-style: normal;
+	font-size: 20px;
+	line-height: 25px;
+	text-align: left;
+	letter-spacing: -0.02em;
+	text-transform: capitalize;
+	padding: 12px;
+	color: #000;
+}
+
+.container__content-header1 p,
+.container__content-header2 p,
+.container__content-header3 p {
+	font-family: 'Sora', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	justify-content: space-between;
+	padding: 0 380px 0 0;
+	letter-spacing: -0.02em;
+	text-transform: capitalize;
+}
+
+.container__button {
+	display: flex;
+	filter: drop-shadow(0px 0px 25px rgba(255, 152, 1, 0.5));
+}
+
+.container__btn {
+	text-align: center;
+	align-items: center;
+	font-family: 'Sora', sans-serif;
+	font-style: normal;
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+	text-transform: capitalize;
+	color: #fff;
+	background: linear-gradient(105.16deg, #ff9700 15.31%, #ffc92c 87.35%);
+	border-radius: 50px;
+	width: 217px;
+	height: 64px;
+	margin: 100px 0 0 350px;
 }
