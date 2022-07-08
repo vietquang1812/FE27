@@ -3,6 +3,8 @@
     border-radius: 20px;
     box-shadow: 0px 4px 35px rgba(77, 77, 255, 0.15);
     height: 656.05px;
+    max-width: 1193px;
+    
 }
 h1{
     width: 806px;
@@ -24,8 +26,6 @@ h1{
     transform: rotate(-1deg);
 }
 .phan_than{
-    height: 369.03px;
-    width: 1068.6px;
     margin-top: 60px;
     margin-left: 37.09px;
 }
