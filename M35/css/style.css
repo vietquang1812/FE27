@@ -34,3 +34,21 @@ h2 {
     padding-left: 40px;
     font-size: 25px;
 }
+@media screen and (max-width: 767px) {
+    .card {
+        padding: 10px 15px;
+    }
+    .card-body p {
+        padding-left: 0;
+        font-size: 16px;
+    }
+    .img_card{
+        width: 100%;
+    }
+    .card-body {
+        display: block;
+    }
+    .card-head h3 {
+        font-size: 18px;
+    }
+}
