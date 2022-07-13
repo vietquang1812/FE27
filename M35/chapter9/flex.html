@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FE27 | M35: Flexible</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .menu {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            /* flex-direction: column-reverse; */
+        }
+        .menu li {
+            width: 150px;
+            padding: 10px 20px;
+            text-align: center;
+            background-color: blue;
+            font-weight: bold;
+            order: 1;
+            color: #fff;
+        }
+        .menu li.active {
+            background-color: greenyellow;
+            padding: 20px;
+        }
+        aside, section, footer {
+            text-align: center;
+            border: 2px solid #000;
+            background-color: orange;
+            color: #fff;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        main {
+            display: flex;
+            align-items: flex-start;
+        }
+        aside {
+            width: 30%;
+        }
+        section{
+            width: 70%;
+            min-height: 400px;
+        }
+        .menu .order3 {
+            order: 0;
+        }
+        @media screen and (max-width: 767px) {
+            aside, section {
+                width: 100%;
+            }
+            main {
+                flex-direction: column-reverse;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul class="menu">
+            <li class="active">item 1</li>
+            <li>item 2</li>
+            <li class="order3">item 3</li>
+            <li>item 4</li>
+        </ul>
+    </header>
+    <main>
+        <aside>Aside</aside>
+        <section>Section</section>
+    </main>
+    <footer>Footer</footer>
+</body>
+</html>
