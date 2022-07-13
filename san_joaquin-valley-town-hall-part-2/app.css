@@ -1,0 +1,234 @@
+*{
+    box-sizing: border-box;
+}
+html {
+    background-image: linear-gradient(to bottom, white, #FFEBC6, rgb(236, 172, 98) );
+}
+body{
+    max-width: 993px;
+    margin: 0px auto;
+    background-color: rgba(244, 238, 228, 1);
+}
+.open {
+    display: flex;
+    background-image: linear-gradient( 88.88deg, #F2BB2E 0%, #FFFFFF 41.15%, #FFFFFF 53.13%, #F2BB2E 100%);
+}
+.open img{
+    max-width: 90px;
+    height: auto;
+    margin-left: 37px;
+    margin-top: 32px;
+    padding-bottom: 27px;
+}
+.open .heading{
+    padding-left: 35px;
+    
+}
+.open .heading h1{
+    font-family: Sora;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:  rgba(242, 151, 46, 1);
+    margin-top: 14px;
+}
+.open .heading h3{
+    font-family: Sora;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: -25px;
+}
+.menu{
+    margin: 0;
+    padding-left: 0;
+    clear: both;
+    list-style-type: none;
+}
+.menu::after{
+    clear: both;
+    content: '';
+}
+.menu.menu_hoz>.menu_item{
+    width: 20%;
+    float: left;
+} 
+.menu_item{
+    width: 200px;
+    display: block;
+    margin-bottom: 61px;
+}
+.menu_item a{
+    display: block;
+    width: 100%;
+    font-family: Sora;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(242, 151, 46, 1);
+    border-right: 2px solid  #fff;
+    padding: 20px 10px;
+}
+.menu_item a:hover{
+    background-color: rgb(180, 138, 89);
+}
+.has_child{
+    position: relative;
+}
+.has_child>.menu{
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+.has_child>.menu li{
+    width: 100%;
+}
+.has_child:hover>.menu{
+    display: block;
+}
+.menu_item_1 a{
+    display: block;
+    width: 100%;
+    font-family: Sora;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(242, 151, 46, 1);
+    border-top: 2px solid  #fff;
+    padding: 20px 10px;
+}
+main .section_1 h2{
+    font-family: Sora;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    margin-left: 58px;
+}
+main .paragraph{
+    font-family: Sora;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 51px;
+    margin-right: 67px;
+}
+main .quote{
+    font-family: Sora;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 83px;
+}
+main .border_1{
+    border-bottom: 2px solid rgba(242, 151, 46, 1);
+    margin-bottom: 45.1px;
+}
+main .section_2 h2{
+    font-family: Sora;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    margin-left: 51px;
+
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.paragraph_2{
+    margin-left: 51px;
+    padding-right: 67px;
+    font-family: Sora;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+.flex img{
+    margin-right: 58px;
+    padding-left: 49px;
+    max-width: 100%;
+    max-height: 100%;
+    
+    
+}
+.paragraph_3{
+    font-family: Sora;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 51px;
+    margin-right: 81px;
+}
+.border_2{
+    border-bottom: 2px solid rgba(242, 151, 46, 1);
+    margin-bottom: 29px;
+}
+.section_3 h2{
+    font-family: Sora;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    margin-left: 51px;
+
+}
+.list_1 ul{
+    font-family: Sora;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 56px;
+}
+.flex_2{
+    display: flex;
+}
+.list_2 ul{
+    font-family: Sora;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.paragraph_4{
+    text-align: center;
+    font-family: Sora;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    padding-top: 42px;
+    padding-bottom: 27px;
+    color:  rgba(255, 255, 255, 1);
+    
+}
+footer{
+    background-color: rgba(242, 151, 46, 1);
+    margin-bottom: 40px;
+}
