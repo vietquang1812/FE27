@@ -1,0 +1,78 @@
+* {
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: blue;
+}
+#main {
+    background-color: red;
+}
+.footer {
+    background-color: yellow;
+}
+#main section.s1.bg-section {
+    background-color: black;
+}
+.timeline {
+    width: 220px;
+    height: 170px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: 0px 4px 35px rgba(77, 77, 255, 0.15);
+    border-radius: 20px;
+    background-color: #fff;
+}
+.timeline.bg-gray {
+    background-color: #E7E7E7;;
+}
+.timeline.bg-s2 {
+    background-color: #4D4DFF;
+}
+.timeline.bg-s2 .timeline_title, .timeline.bg-s2 .timeline_time {
+    color: #fff;
+}
+.timeline_title {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #001B4B;
+}
+.timeline_time {
+    color: #001B4B;
+    font-size: 18px;
+    opacity: 0.6;
+}
+#main .s1 h3 {
+    color: yellow;
+}
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+}
+#main .s1 {
+    background-color: #4D4DFF;
+}
+#section1 {
+    background-color: red;
+}
+.sec1 {
+    background-color: yellow!important;
+}
+.timeline p {}
+.timeline_time {
+
+}
+a[title] {
+    color: #fff;
+}
+main>section {
+    
+}

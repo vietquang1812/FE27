@@ -1,0 +1,112 @@
+.box{
+    border-radius: 10px;
+    border: 1px solid #000;
+    margin: auto;
+    width: 969px;
+    height: 543px;
+}
+.box img{
+    margin: 56px 52px 62px 37px ;
+}
+.box h2{
+    text-align: center;
+    width: 824px;
+    height: 54px;
+    left: 292px;
+    top: 170px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 46px;
+    color: #2770dc;
+    margin: 39px 88px 0px 57px;
+}
+.box p{
+    margin-top: 56px;
+    margin-bottom: 53px;
+    margin-right: 44px;
+    font-size: 25px;
+    line-height: 36px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+}
+.faqs{
+    margin-top:10%;
+}
+.faqs h2{
+    width: 927px;
+    height: 94px;
+    margin: 0px 228px 61px 227px;
+    text-align: center;
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    font-size: 78px;
+    line-height: 93.6px;
+    color: #000;
+    text-shadow: 0px 8px 8px;
+}
+.gach{
+    width: 28.03px;
+    height: 0px;
+    left: 255px;
+    top: 963px;
+    border: 5px solid #000000;
+    margin-left: 255px;
+    transform: matrix(0.05, 1, -1, 0.03, 0, 0);
+}
+.p1{
+    width: 503.11px;
+    height: 25px ;
+    top: 964px;
+    left: 291px;
+    font-family: 'Sora';
+    letter-spacing: -0.02em;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25.2px;
+    margin-left: 34.7px;
+    margin-top: 14px;
+    text-transform: capitalize;
+}
+.tabp{
+    width: 978.84px;
+    top:1007px;
+    left: 277.16px;
+    margin: 0px 126px 70px 277.16px;
+    font-family: 'Sora';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+}
+.bd1{
+    margin: auto;
+    width: 217px;
+    height: 64px;
+    border: 1px solid #ff9700;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    background: linear-gradient(105.16deg, #FF9700 15.31%, #FFC92C 87.35%);
+    border-radius: 50px;
+}
+.view{
+    left: 30.88%;
+    right: 31.34%;
+    top: 31.25%;
+    bottom: 29.69%;
+
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+}

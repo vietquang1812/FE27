@@ -1,0 +1,36 @@
+h2 {
+    color: red;
+    /* font-size: 30px;
+    font-family: system-ui;
+    text-transform: uppercase;
+    text-align: center; */
+}
+.cl_blue {
+    color: blue;
+}
+.card {
+    max-width: 969px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    border-radius: 22px;
+    padding: 20px 40px;
+}
+.card-head h3 {
+    font-size: 46px;
+    color: #2770DC;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.card-body {
+    overflow: hidden;
+    display: flex;
+}
+.img_card {
+    width: 270px;
+    display: block;
+    height: auto;
+}
+.card-body p {
+    padding-left: 40px;
+    font-size: 25px;
+}
