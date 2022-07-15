@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FE27: M35 - Tables</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        thead, tfoot {
+            background-color: aqua;
+        }
+        th,td {
+            white-space: nowrap;
+            border: 1px solid;
+            padding: 10px 20px;
+        }
+        .book td:nth-child(2) {
+            text-align: center;
+        }
+        /* td:nth-child(3) {
+            text-align: right;
+        } */
+        .book td:last-child {
+            text-align: right;
+        }
+        td[colspan] {
+            text-align: center;
+        }
+        .v-align-top {
+            vertical-align: middle;
+        }
+        tbody tr:nth-child(3n + 1) {
+            background-color: rgba(0,0,0,.2);
+        }
+        tbody tr:nth-child(3n + 2) {
+            background-color: rgba(255, 22, 22, 0.2);
+        }
+        tbody tr:nth-child(3n) {
+            background-color: rgba(154, 255, 22, 0.6);
+        }
+        tbody tr:nth-last-child(2) {
+            background-color: yellow;
+        }
+        tbody>tr:first-child:last-child {
+            background-color: #fff;
+        }
+        /* tbody tr:first-child {
+            background-color: yellow;
+        }
+        tbody tr:nth-child(3) {
+            background-color: yellow;
+        } */
+    </style>
+</head>
+<body>
+    <table class="book">
+        <thead>
+            <tr>
+                <th>Book</th>
+                <th>Year Published</th>
+                <th>Sales</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>HTML5 & CSS3</th>
+                <td>2001</td>
+                <td>$100.00</td>
+            </tr>
+            <tr>
+                <th>Javascript</th>
+                <td>2002</td>
+                <td>$1,220.12</td>
+            </tr>
+            <tr>
+                <th>React JS</th>
+                <td>2012</td>
+                <td>$1,150.40</td>
+            </tr>
+            <tr>
+                <th>React JS</th>
+                <td>2012</td>
+                <td>$1,150.40</td>
+            </tr>
+            <tr>
+                <th>React JS</th>
+                <td>2012</td>
+                <td>$1,150.40</td>
+            </tr>
+            <tr>
+                <th>React JS</th>
+                <td>2012</td>
+                <td>$1,150.40</td>
+            </tr>
+            <tr>
+                <th>React JS</th>
+                <td>2012</td>
+                <td>$1,150.40</td>
+            </tr>
+            <tr>
+                <th>React JS</th>
+                <td>2012</td>
+                <td>$1,150.40</td>
+            </tr>
+            <tr>
+                <th>React JS</th>
+                <td>2012</td>
+                <td>$1,150.40</td>
+            </tr>
+            <tr>
+                <th>React JS</th>
+                <td>2012</td>
+                <td>$1,150.40</td>
+            </tr>
+            <tr>
+                <th>React JS</th>
+                <td>2012</td>
+                <td>$1,150.40</td>
+            </tr>
+            <tr>
+                <th>React JS</th>
+                <td>2012</td>
+                <td>$1,150.40</td>
+            </tr>
+            <tr>
+                <th>React JS</th>
+                <td>2012</td>
+                <td>$1,150.40</td>
+            </tr>
+            <tr>
+                <th>React JS</th>
+                <td>2012</td>
+                <td>$1,150.40</td>
+            </tr>
+            <tr>
+                <th>React JS</th>
+                <td>2012</td>
+                <td>$1,150.40</td>
+            </tr>
+            <tr>
+                <th>React JS</th>
+                <td>2012</td>
+                <td>$1,150.40</td>
+            </tr>
+            <tr>
+                <th>React JS</th>
+                <td>2012</td>
+                <td>$1,150.40</td>
+            </tr>
+            <tr>
+                <th>React JS</th>
+                <td>2012</td>
+                <td>$1,150.40</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2"><b>Totals</b></td>
+                <!-- <td></td> -->
+                <td>$3,370.52</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h3>Students</h3>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Class</th>
+                <th rowspan="2">Full Name</th>
+                <th colspan="4">M35</th>
+            </tr>
+            <tr>
+                <th>Homework</th>
+                <th>LT</th>
+                <th>TH</th>
+                <th>Avg</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="5" class="v-align-top">FE27</th>
+                <td>Nguyen Van A</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>EX 1</th>
+                                <th>EX 2</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>6</td>
+                                <td>7</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>Nguyen Van B</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Nguyen Van C</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Nguyen Van D</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Nguyen Van E</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>7</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
