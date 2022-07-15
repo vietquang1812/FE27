@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FE27: M35 Form Layout</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .form {
+            display: block;
+            max-width: 600px;
+            margin: 100px auto 0;
+            border-radius: 20px;
+            border: 1px solid #000;
+            box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.397);
+            padding: 20px;
+        }
+        .form_item {
+            margin-bottom: 10px;
+            display: flex;
+        }
+        .form_item_label {
+            width: 20%;
+            padding-right: 10px;
+            display: block;
+            text-align: right;
+        }
+        .form_item_input,.form_item_select {
+            display: block;
+            width: 50%;
+            font-size: 16px;
+            padding: 5px 20px;
+            border-radius: 3px;
+        }
+        .form_submit {
+            text-align: center;
+            width: 50%;
+            margin-left: 20%;
+        }
+        .btn-submit,.btn-reset {
+            background-color: green;
+            border: none;
+            padding: 5px 20px;
+            text-align: center;
+            color: #fff;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+        .btn-reset {
+            background-color: rgb(145, 143, 143);
+        }
+    </style>
+</head>
+<body>
+    <form class="form" action="form_layout.html" method="get">
+        <div class="form_item">
+            <label for="firstname" class="form_item_label">First Name:</label>
+            <input type="text" class="form_item_input" name="firstname" id="firstname" placeholder="First Name">
+        </div>
+        <div class="form_item">
+            <label for="lastname" class="form_item_label">Last Name:</label>
+            <input type="text" class="form_item_input" name="lastname" id="lastname" placeholder="Last Name">
+        </div>
+        <div class="form_item">
+            <label for="email" class="form_item_label">Email:</label>
+            <input type="email" class="form_item_input" name="email" id="email" placeholder="Email">
+        </div>
+        <div class="form_item">
+            <label for="address" class="form_item_label">Address:</label>
+            <input type="text" class="form_item_input" name="address" id="address" placeholder="Address">
+        </div>
+        <div class="form_item">
+            <label for="country" class="form_item_label">Country:</label>
+            <select name="country" id="country" class="form_item_select">
+                <optgroup label="ASIAN">
+                    <option value="vietnam">Viet Nam</option>
+                    <option value="lao">Lao</option>
+                    <option value="campuchia">Campuchia</option>
+                </optgroup>
+            </select>
+        </div>
+        <div class="form_submit">
+            <button type="submit" class="btn-submit">Submit</button>
+            <button type="reset" class="btn-reset">Cancel</button>
+        </div>
+    </form>
+</body>
+</html>

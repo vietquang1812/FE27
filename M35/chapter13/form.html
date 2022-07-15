@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FE27: M35 Form</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <form name="login" action="form.html" method="get" target="blank">
+        <p>
+            <input type="text" maxlength="50" required name="fullname" value="Nguyen Van A" placeholder="Please Enter Your Name" id="">
+        </p>
+        <p>
+            <input type="text" name="username" readonly value="Nguyen Van A" placeholder="Please Enter Your Name" id="">
+        </p>
+        <p>
+            <input type="text" name="disabled" disabled value="Disabled">
+        </p>
+        <p>
+            <input type="email" name="email" value="admin@admin.com" required placeholder="Please Enter Your Email" id="">
+        </p>
+        <p>
+            <input placeholder="Percent"  type="number" max="100" min="0" step="0.5">
+        </p>
+        <p>
+            <b>Checkbox Button</b>
+            <div>
+                <input type="checkbox" checked name="skill" value="HTML5&CSS3" id="skill1"><label for="skill1">HTML5 & CSS3</label>
+            </div>
+            <div>
+                <label>
+                    <input type="checkbox" name="skill" value="Javascript">
+                    Javascript
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="checkbox" name="skill" value="ReactJs">
+                    ReactJS
+                </label>
+            </div>
+        </p>
+        
+        <p>
+            <b>Radio Button</b>
+            <div>
+                <label>
+                    <input type="radio" name="class" value="FE27" id="">
+                    FE27
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="class" value="FE27" id="">
+                    NJ01
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="class" value="FE27" id="">
+                    PHP02
+                </label>
+            </div>
+        </p>
+        <p>
+            <select name="search" id="">
+                <option value="https://google.com">Google.com</option>
+                <option selected value="https://bing.com">Bing.com</option>
+                <option value="https://yahoo.com">Yahoo.com</option>
+            </select>
+
+            
+        </p>
+        <p>
+            <select name="country" multiple size="2">
+                <optgroup label="EU">
+                    <option value="english">English</option>
+                    <option value="france">France</option>
+                </optgroup>
+                <optgroup label="ASIAN">
+                    <option value="vietnam">Viet Nam</option>
+                    <option value="lao">Lao</option>
+                    <option value="malaysia">Malaysia</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <textarea name="message" placeholder="Message" id="" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="file" name="file" multiple accept="image/jpeg,image/png" id="">
+        </p>
+        <div>
+            <button type="submit">Submit</button>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+            <button type="reset">Cancel</button>
+
+        </div>
+    </form>
+</body>
+</html>
