@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FE27 | M35 Grid</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header, section, aside, footer {
+            background-color: orange;
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+            padding: 30px;
+            font-weight: bold;
+            border: 2px solid #fff;
+        }
+        main {
+            display: grid;
+            grid-template-columns: 300px 1fr 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas: 
+            "header header header"
+            "aside sec1 sec1"
+            "aside sec2 sec3"
+            "footer footer footer";
+        }
+        header {
+            grid-area: header;
+        }
+        aside {
+            grid-area: aside;
+        }
+        #sec1 {
+            grid-area: sec1;
+        }
+        #sec2 {
+            grid-area: sec2;
+        }
+        #sec3 {
+            grid-area: sec3;
+        }
+        footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>Header</header>
+        <aside>Aside</aside>
+        <section id="sec1">Section 1</section>
+        <section id="sec2">Section 2</section>
+        <section id="sec3">Section 3</section>
+        <footer>Footer</footer>
+    </main>
+</body>
+</html>
