@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<style>
+      .item > .item_child {
+        width: 20%;
+        float: left;
+      }
+      .item_child {
+        width: 200px;
+        display: block;
+      }
+      .has_child > ul {
+        display: none;
+        position: absolute;
+        width: 100%;
+      }
+      .has_child:hover > ul {
+        display: block;
+      }
+      
+		</style>
+	</head>
+	<body>
+		<nav class="danhsach">
+			<ul class="item">
+				<li class="item_child">Home</li>
+				<li class="item_child">Speakers</li>
+				<li class="item_child">Luncheons</li>
+				<li class="item_child">Tickets</li>
+				<li class="item_child has_child">
+					About Us
+					<ul>
+						<li class="item_child">Our history</li>
+						<li class="item_child">Board of directions</li>
+						<li class="item_child">Past speakers</li>
+						<li class="item_child">Contact us</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</body>
+</html>

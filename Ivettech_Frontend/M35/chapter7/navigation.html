@@ -1,0 +1,85 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;200;300;400;500;600&family=Sora:wght@100;200;300;400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<title>M35: FE27 Navigation</title>
+
+		<style>
+			* {
+				box-sizing: border-box;
+				font-family: 'Sora', sans-serif;
+			}
+			.menu {
+				margin: 0;
+				padding-left: 0;
+				clear: both;
+				list-style-type: none;
+			}
+			.menu:after {
+				clear: both;
+				content: '';
+			}
+			.menu .menu_hoz > .menu_item {
+				width: 20%;
+				float: left;
+			}
+			.menu_hoz > .has_child > .menu > {
+				top: 0;
+				left: 100%;
+			}
+			.menu_item {
+				width: 197px;
+				display: block;
+			}
+			.menu_item a {
+				font-style: normal;
+				font-weight: 700;
+				font-size: 16px;
+				line-height: 24px;
+				text-align: center;
+				display: block;
+				color: #ffffff;
+				width: 100%;
+				border: 1px solid rgb(3, 3, 105);
+				padding: 10px 20px;
+				text-decoration: none;
+				background-color: #f2972e;
+			}
+			.menu_item a:hover {
+				background-color: #fff;
+				color: rgb(3, 3, 105);
+			}
+      
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<ul class="menu menu_hoz">
+					<li class="menu_item"><a href="#">Home</a></li>
+					<li class="menu_item"><a href="#">Speakers</a></li>
+					<li class="menu_item"><a href="#">Lucheons</a></li>
+					<li class="menu_item"><a href="#">Tickets</a></li>
+					<li class="menu_item has_child">
+						<a href="#">About Us</a>
+						<ul class="menu">
+							<li class="menu_item"><a href="#">Our History</a></li>
+							<li class="menu_item"><a href="#">Board of Directions</a></li>
+							<li class="menu_item"><a href="#">Speakers</a></li>
+							<li class="menu_item"><a href="#">Contact Us</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header>
+	</body>
+</html>
