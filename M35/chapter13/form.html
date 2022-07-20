@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FE27: M35 Form</title>
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <style>
+        input:required {
+            background-color: aqua;
+        }
+        input:valid {
+            border-color: greenyellow;
+        }
+        input:invalid {
+            border-color: red;
+        }
+    </style>
 </head>
 <body>
     <form name="login" action="form.html" method="get" target="blank">
@@ -89,8 +100,24 @@
         <p>
             <textarea name="message" placeholder="Message" id="" cols="30" rows="10"></textarea>
         </p>
+        
         <p>
             <input type="file" name="file" multiple accept="image/jpeg,image/png" id="">
+        </p>
+        <p> 
+            <input type="range" min="1" value="1" max="10" step="1">
+        </p>
+        <p>
+            <input type="date" name="date" placeholder="Date">
+        </p>
+        <p>
+            <input type="month" name="month" placeholder="month">
+        </p>
+        <p>
+            <input type="color" name="color" placeholder="color">
+        </p>
+        <p>Hidden
+            <input type="hidden" name="hidden" placeholder="hidden">
         </p>
         <div>
             <button type="submit">Submit</button>

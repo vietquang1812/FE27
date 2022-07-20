@@ -34,6 +34,7 @@
             display: block;
             width: 50%;
             font-size: 16px;
+            line-height: 24px;
             padding: 5px 20px;
             border-radius: 3px;
         }
@@ -56,25 +57,44 @@
         .btn-reset {
             background-color: rgb(145, 143, 143);
         }
+        input:valid{
+            border-color: greenyellow;
+        }
+        input:invalid {
+            border-color: red;
+        }
+
     </style>
 </head>
 <body>
     <form class="form" action="form_layout.html" method="get">
         <div class="form_item">
             <label for="firstname" class="form_item_label">First Name:</label>
-            <input type="text" class="form_item_input" name="firstname" id="firstname" placeholder="First Name">
+            <input type="text" class="form_item_input" required name="firstname" id="firstname" placeholder="First Name">
         </div>
         <div class="form_item">
             <label for="lastname" class="form_item_label">Last Name:</label>
-            <input type="text" class="form_item_input" name="lastname" id="lastname" placeholder="Last Name">
+            <input type="text" class="form_item_input" required name="lastname" id="lastname" placeholder="Last Name">
+        </div>
+        <div class="form_item">
+            <label for="phone" class="form_item_label">Phone:</label>
+            <input type="text" class="form_item_input" required name="phone" id="phone" placeholder="Phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}|\d{10}" title="Please enter correct format 999-999-9999 or 9999999999">
+        </div>
+        <div class="form_item">
+            <label for="password" class="form_item_label">password:</label>
+            <input type="password" class="form_item_input" required name="password" id="phone" placeholder="Phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}|\d{10}" title="Please enter correct format 999-999-9999 or 9999999999">
+        </div>
+        <div class="form_item">
+            <label for="code" class="form_item_label">code:</label>
+            <input type="text" class="form_item_input" name="code" id="code" placeholder="Phone" pattern="[A-Z]{3}\d{5}[a-z]{1,2}" title="ABC12345xl">
         </div>
         <div class="form_item">
             <label for="email" class="form_item_label">Email:</label>
-            <input type="email" class="form_item_input" name="email" id="email" placeholder="Email">
+            <input type="email" class="form_item_input" required name="email" id="email" placeholder="Email">
         </div>
         <div class="form_item">
             <label for="address" class="form_item_label">Address:</label>
-            <input type="text" class="form_item_input" name="address" id="address" placeholder="Address">
+            <input type="text" class="form_item_input" required name="address" id="address" placeholder="Address">
         </div>
         <div class="form_item">
             <label for="country" class="form_item_label">Country:</label>
