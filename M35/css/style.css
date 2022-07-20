@@ -15,6 +15,7 @@ h2 {
     border-radius: 22px;
     padding: 20px 40px;
 }
+
 .card-head h3 {
     font-size: 46px;
     color: #2770DC;
@@ -33,4 +34,73 @@ h2 {
 .card-body p {
     padding-left: 40px;
     font-size: 25px;
+}
+.list-unorder {
+    list-style-type: square;
+}
+.list-order-roman {
+    list-style: upper-roman;
+}
+.list-order-decimal {
+    list-style: decimal;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav img {
+    width: 50px;
+    height: auto;
+    display: block;
+}
+
+nav ul {
+    width: 80%;
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li {
+    width: 25%;
+}
+nav ul li a {
+    display: block;
+    padding: 10px 30px;
+    text-align: center;
+
+}
+nav ul li a:hover {
+    background-color: red;
+    color: #fff;
+    font-weight: bold;
+}
+.logo {
+    width: auto;
+    height: 100px;
+}
+.section1 {
+    max-width: 600px;
+    margin: 0 auto;
+    border-bottom: 1px solid;
+}
+.section1_content img {
+    width: 100px;
+    float: left;
+    padding-right: 20px;
+}
+.section1_content p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+button{
+    color: #FFFFFF;
+    position: absolute;
+    right: 50%;
+    Width :217px; 
+    Height:64px;
+    Radius:50px;
+background: linear-gradient(105.16deg, #FF9700 15.31%, #FFC92C 87.35%);
+border-radius: 50px;
 }
