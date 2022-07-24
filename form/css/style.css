@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Sora', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 80px;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 45px 75px;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: space-around;
+    border-radius: 25px;
+}
+
+.register {
+    padding: 0 45px;
+    width: 50%;
+    border-right: 2px solid #000;
+}
+
+.text-heading {
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.text-value {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    margin-bottom: 4px;
+}
+
+.input__form {
+    width: 100%;
+    padding: 12px 18px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    margin-bottom: 32px;
+    outline: unset;
+}
+
+.accept {
+    display: flex;
+}
+
+.input__accept {
+    margin-right: 12px;
+}
+
+p{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+span {
+    color: #2E9CDA;
+}
+
+.btn-form {
+    margin: 28px 0;
+}
+
+.btn {
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-submit {
+    margin-right: 12px;
+    background-color:#51B6FF;
+}
+
+.btn-cancel {
+    background-color: #B7BDC1;
+}
+
+
+.login {
+    width: 50%;
+    padding: 0 45px;
+}
