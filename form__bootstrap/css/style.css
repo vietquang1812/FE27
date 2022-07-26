@@ -1,0 +1,15 @@
+body {
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 100px;
+}
+
+.container {
+    border-radius: 25px;
+}
+
+.register {
+    border-right: 1px solid #000;
+}
