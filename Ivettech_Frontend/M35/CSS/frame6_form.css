@@ -1,0 +1,109 @@
+/** @format */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;200;300;400;500;600&family=Sora:wght@100;200;300;400;500&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Sora', sans-serif;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	background-image: url(/M35/images/Slide-img.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: 80px;
+}
+
+.form__container {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 45px 75px;
+	background: rgba(255, 255, 255, 0.9);
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+	border-radius: 25px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.register {
+	padding: 0 45px;
+	width: 50%;
+	border-right: 2px solid #000;
+}
+
+.text-heading {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 42px;
+	text-transform: uppercase;
+	margin-bottom: 24px;
+}
+
+.form__row {
+	padding: 8px 0;
+}
+
+.form__label {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 500;
+	color: #000;
+	margin-bottom: 4px;
+}
+.form__input {
+	display: block;
+	border: 1px solid #000;
+	border-radius: 8px;
+	background-color: #fff;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	width: 100%;
+	padding: 12px 18px;
+	margin-bottom: 32px;
+}
+
+.check__input {
+  margin-right: 12px;
+}
+
+span {
+	color: #2E9CDA;
+}
+
+.form__btn {
+	margin: 28px 0;
+}
+
+.btn {
+	padding: 8px 16px;
+	border-radius: 8px;
+	font-size: 16px;
+	line-height: 24px;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
+
+.btn:hover {
+	opacity: 0.8;
+}
+
+.btn-submit {
+	margin-right: 12px;
+	background: #51B6FF;
+}
+
+.btn-cancel {
+	background-color: #B7BDC1;
+}
+
+.login {
+	padding: 0 45px;
+	width: 50%;
+}

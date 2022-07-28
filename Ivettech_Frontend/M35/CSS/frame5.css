@@ -25,6 +25,7 @@ body {
 
 .banner {
 	display: block;
+	max-width: 100%;
 	position: relative;
 }
 

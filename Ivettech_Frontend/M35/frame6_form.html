@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/frame6_form.css">
+  <title>Form Frame6</title>
+</head>
+<body>
+  <div class="form__container">
+    <div class="register">
+      <h2 class="text-heading">register</h2>
+
+      <form action="" class="form">
+        <div class="form__row">
+          <label for="email" class="form__label">Email:</label>
+          <input type="email" class="form__input" name="email" id="email" placeholder="Email" required> 
+        </div>
+        <div class="form__row">
+          <label for="password" class="form__label">Password:</label>
+          <input type="password" class="form__input" name="password" id="password" placeholder="Password" required> 
+        </div>
+        <div class="form__row">
+          <label for="password" class="form__label">Re-Password:</label>
+          <input type="password" class="form__input" name="password" id="re_password" placeholder="Re-Password" required> 
+        </div>
+
+      	<div class="form__row">
+					<label class="form__row-check">
+						<input type="checkbox" name="checkbox" id="checkbox" class="check__input" />
+						I agree to the <span>privacy policy</span>
+					</label>
+				</div>
+
+        <div class="form__btn">
+          <button class="btn btn-submit">Submit</button>
+          <button class="btn btn-cancel">Cancel</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="login">
+      <h2 class="text-heading">login</h2>
+
+      <form action="" class="form">
+        <div class="form__row">
+          <label for="email" class="form__label">Email:</label>
+          <input type="email" class="form__input" name="email" id="email1" placeholder="Email" required> 
+        </div>
+        <div class="form__row">
+          <label for="password" class="form__label">Password:</label>
+          <input type="password" class="form__input" name="password" id="password1" placeholder="Password" required> 
+        </div>
+
+      	<div class="form__row">
+					<label class="form__row-check">
+						<input type="checkbox" name="checkbox" id="checkbox1" class="check__input" />
+            Remember me
+					</label>
+				</div>
+
+        <div class="form__btn">
+          <button class="btn btn-submit">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
