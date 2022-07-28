@@ -1,0 +1,79 @@
+.name {
+  /* Challenge booklets and slides */
+
+
+position: absolute;
+width: 806px;
+height: 72px;
+left: 48px;
+top: 57px;
+font-family: 'Sora';
+font-style: normal;
+font-weight: 700;
+font-size: 45px;
+line-height: 123.4%;
+padding-left: 118px;
+/* or 56px */
+
+display: flex;
+align-items: center;
+
+/* 4 */
+
+color: #001B4B;
+
+border: 1px solid #000000;
+text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.48);
+}
+.content {
+    position: absolute;
+    left: 3.11%;
+    right: 7.32%;
+    top: 33.1%;
+    bottom: 12.86%;
+    
+    /* text */
+    
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 200%;
+    /* or 36px */
+    
+    
+    color: #333333;
+    border: 5px pink;
+    border-radius: 12px;
+    border-color: pink;
+
+}
+.note {
+
+    position: absolute;
+    left: 3.11%;
+    right: 7.32%;
+    top: 70.1%;
+    bottom: 50.86%;
+    
+    /* text */
+    
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 200%;
+    /* or 36px */
+    
+    
+    color: #333333;
+
+}
+ :hover div .name{
+   font-weight: bolder;
+   border-color: green;
+   border-radius: 15px;
+   font-size: 45px;
+   background-color: chocolate;
+   padding-left: 118px;
+}
