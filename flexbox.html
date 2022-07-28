@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <img class="img1"src="../day 5/headerimg.png" alt="">
+   <div>
+        <ul class="menu">
+            <li class="menu_child"><a href="">Home</a></li>
+            <li class="menu_child"><a href="">Speakers</a></li>
+            <li class="menu_child"><a href="">CONTRACT US</a></li>
+            <li class="menu_child "><a href="">ABOUT US</a>
+               <ul class="menu00">
+                    <li class="menu11"><a href="">OUT HISTORY</a></li>
+                    <li class="menu11"><a href="">BOARD OF DIRECTORS</a></li>
+                    <li class="menu11"><a href="">PAST SPEAKERS</a></li> 
+                    <li class="menu11"><a href="">CONTACT US</a></li>
+
+               </ul>
+
+                  </li>  
+             
+        </ul>
+       <style>
+
+         :root {
+           background-color: bisque;
+
+         }
+           .menu_child {
+              color: #FFFFFF;
+              display: flex;
+              /* padding-left: 5px; */
+              list-style: none ;
+              background-color: #F2972E;
+              align-items:center;
+              width: 200px;
+              height: 50px;
+              align-self: center;
+              /* line-height: none; */
+              align-items: center;
+              justify-content: space-between;
+              border: 1px solid yellow;
+              padding-left: 80px ; 
+              text-align: center;
+              position: relative;
+              font-weight: 700;
+              font-size: 16px;
+               line-height: 24px;
+           }
+           
+            .menu_child>a {
+              color: #FFFFFF;
+              text-decoration : none;
+              
+            }
+            .menu_child:hover{
+                
+                font-weight: bolder;
+                color: #FFFFFF;
+                display: flex;
+                
+                list-style: none;
+                background-color: #2e0bf4;
+                align-items: center;
+                width: 200px;
+                height: 50px;
+                 align-self: center;
+                 align-items: center;
+                justify-content: space-between;
+                border: 1px  solid yellow;
+                
+                text-align: center;
+              
+            }
+           .menu {
+                 display: flex;
+                 padding-left: 0;
+                 list-style: none;
+                 justify-content: space-between;
+                 text-align: center;
+                 
+                 float: left;
+                 position: relative; 
+              }   
+             .menu00 {
+              position: absolute;
+              top: 52px;
+              display: block;
+              border: 1px solid green;
+              list-style: none;
+              /* padding: 0px;
+              right: 0px; */
+              text-align: center;
+               display: none;
+               margin: 0px;
+               width: 240px;
+               left: 0px;
+               background-color: #F2972E;
+               right: 10px;
+             }
+             .menu11>a {
+               position: relative;
+               text-decoration: none;
+               
+               /* background-color: aqua; */
+               align-items: center;
+               
+               justify-content: space-between;
+               padding-left: 0px ;
+               padding-right: 0px; 
+               padding-bottom: 5px;
+               text-align: center;
+               margin-top: 0px;
+               margin: 0px;
+             }
+             .menu11{
+              /* background-color: aqua; */
+             }
+               .menu_child:hover .menu00{
+                display: block;
+                /* padding: 0px; */
+                /* width: 240px; */
+                
+               }
+               img {
+                width: 1024px;
+                height: auto;
+               }
+               .content {
+                position: absolute;
+               width: 371.14px;
+                height: 40px;
+               left: 214px;
+                top: 668px;
+
+                 font-family: 'Sora';
+                 font-style: normal;
+                 font-weight: 700;
+                  font-size: 28px;
+                 line-height: 40px;
+                          /* identical to box height, or 143% */
+
+                  display: flex;
+                   align-items: center;
+                      text-align: center;}
+                  .content1 {
+                    position: absolute;
+                      width: 657.32px;
+                 height: 214px;
+                    left: 274.68px;
+                    top: 721px;
+
+                     font-family: 'Sora';
+                       font-style: normal;
+                       font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                         /* or 150% */
+
+                         display: flex;
+                        align-items: center;
+
+                          color: #000000;
+
+
+                  }
+               .img2{
+                   position: absolute;
+                   width: 144.9px;
+                   height: 129.34px;
+                   left: 67.39px;
+                   top: 750px;
+
+                   background: url(9.png);
+                   border-radius: 8px;
+                  }
+                .img1{
+                  
+                  width: 996px;
+                 height: 609px;
+                 left: -2px;
+                 top: -65px;
+
+                 background: url(7d22-d3ae-4da4-9a6c-bf2bb279d5ae.jpg);
+                }
+               .maincontent{
+                position: absolute;
+                    width: 524px;
+                      height: 50px;
+               left: 238px;
+             top: 194px;
+
+font-family: 'Sora';
+font-style: normal;
+font-weight: 700;
+font-size: 35px;
+line-height: 50px;
+/* identical to box height, or 143% */
+
+
+color: #F2972E;
+
+text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.25);
+               }
+               .subcontent{
+                position: absolute;
+               width: 555.19px;
+               height: 104px;
+                left: 358.61px;
+                  top: 935px;
+
+                  font-family: 'Sora';
+                 font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+               line-height: 24px;
+              /* or 150% */
+
+               display: flex;
+              align-items: center;
+
+             color: #000000;
+               }
+               .left{
+                position: absolute;
+width: 555.19px;
+height: 104px;
+left: 358.61px;
+top: 935px;
+
+font-family: 'Sora';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+
+display: flex;
+align-items: center;
+
+color: #000000;
+
+               }
+               .img3{
+                position: absolute;
+          width: 640px;
+            height: 381px;
+           left: 274px;
+            top: 1095px;
+
+              background: url(sampson_dinosaur.jpg);
+               }
+               .name1{
+                position: absolute;
+              width: 158px;
+              height: 25.87px;
+               left: 65px;
+               top: 882.57px;
+
+               font-family: 'Sora';
+               font-style: normal;
+               font-weight: 700;
+              font-size: 16px;
+                line-height: 24px;
+                  /* or 150% */
+
+               display: flex;
+                align-items: center;
+
+               color: #000000;
+               }
+               .name2{
+                
+position: absolute;
+width: 52.67px;
+height: 21.56px;
+left: 65px;
+top: 908.44px;
+
+font-family: 'Sora';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* or 143% */
+
+
+color: #F90606;
+
+               }
+               .img4{
+                position: absolute;
+                width: 144.9px;
+                height: 129.34px;
+                left: 67.39px;
+                top: 966px;
+
+               background: url(9.png);
+                border-radius: 8px;
+               }
+               .name3{
+                position: absolute;
+               width: 158px;
+                height: 25.87px;
+left: 65px;
+top: 1098.57px;
+
+font-family: 'Sora';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+
+display: flex;
+align-items: center;
+
+color: #000000;
+               }
+       </style>
+     <p class="content" >Why do we use it?</p>  
+    <p class="content1">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>      
+   </div>  
+   <img class="img2"src="../day 5/9 1.png" alt="" >
+   <p class="maincontent">San Joaquin Valley Town Hall</p>
+   <p class="subcontent">Bringing cutting-edge speakers to the valley</p>
+    <p class="left">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."<br>
+      "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
+       <div>
+        <img class="img3" src="../day 5/sampson_dinosaur 3.png" alt="">
+       </div>
+        <span class="name1">Beverlie Krabbe</span>
+        <span class="name2">Editor</span>
+        <div>
+          <img class="img4"src="../day 5/9 1.png" alt="">
+           <span class="name3">manager</span>
+             
+        </div>
+        <div>
+           <p class="content2">What's 75 million years old and brand spanking new? A teenage Utahceratops! Come to the Saroyan, armed with your best dinosaur roar, when Scott Sampson, Research Curator at the Utah Museum of Natural History, steps to the podium. Sampson's research has focused on the ecology and evolution of late Cretaceous dinosaurs and he has conducted fieldwork in a number of countries in Africa.
+              <style>
+                .content2{
+                  position: absolute;
+width: 647px;
+height: 220px;
+left: 274px;
+top: 1495px;
+
+font-family: 'Sora';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+
+display: flex;
+align-items: center;
+
+color: #000000;
+                }
+                .name4{
+                  
+position: absolute;
+width: 68px;
+height: 22px;
+left: 65px;
+top: 1124px;
+
+font-family: 'Sora';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* or 143% */
+
+
+color: #F90606;
+                }
+              </style>
+           
+          </p>
+          <p class="name4"> Manager</p>
+
+        </div>
+        <div class="name5" >Where can I get some?`</div>
+        <style>
+          .name5{
+            position: absolute;
+width: 407.66px;
+height: 40px;
+left: 274px;
+top: 1773px;
+
+font-family: 'Sora';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 40px;
+/* identical to box height, or 143% */
+
+display: flex;
+align-items: center;
+
+color: #000000;
+
+          }
+          .content6{
+            position: absolute;
+width: 318.7px;
+height: 486px;
+left: 277.91px;
+top: 1832px;
+
+font-family: 'Sora';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 30px;
+/* or 214% */
+
+display: flex;
+align-items: center;
+
+color: #000000;
+
+          }
+         .content7{
+          position: absolute;
+width: 327.5px;
+height: 338px;
+left: 601.5px;
+top: 1829px;
+
+font-family: 'Sora';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 30px;
+/* or 214% */
+
+display: flex;
+align-items: center;
+
+color: #000000;}
+.img7{
+  position: absolute;
+width: 158px;
+height: 25.87px;
+left: 65px;
+top: 1746.57px;
+
+font-family: 'Sora';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+
+display: flex;
+align-items: center;
+
+color: #000000;
+}
+.tag1{
+  position: absolute;
+width: 68px;
+height: 22px;
+left: 65px;
+top: 1772px;
+
+font-family: 'Sora';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* or 143% */
+
+
+color: #F90606;}
+.img8{
+  position: absolute;
+width: 144.9px;
+height: 129.34px;
+left: 69.39px;
+top: 1830px;
+
+background: url(9.png);
+border-radius: 8px;
+}
+.img9{
+  position: absolute;
+width: 144.9px;
+height: 129.34px;
+left: 71.39px;
+top: 2046px;
+
+background: url(9.png);
+border-radius: 8px;
+}
+         
+        </style>
+        <p class="content6">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.
+          Sed eu diam et metus rhoncus ultrices. <br>
+          Phasellus molestie massa a ex imperdiet varius. <br>
+          Nam imperdiet diam id leo volutpat, in aliquam lacus . <br>
+          Nam maximus lacus ut bibendum convallis. <br>
+          Ut feugiat neque eu ligula tincidunt ultrices. <br>
+          Maecenas non eros dictum massa venenatis bibendum. <br>
+          Praesent ac dui scelerisque risus fermentum dignissim. <br>
+          Sed volutpat nulla sit amet euismod vestibulum.</p>
+          <p class="content7">Morbi vel nibh at urna cursus malesuada. <br>
+            Nullam bibendum magna nec nisi congue, at lacinia magna . <br>
+            Pellentesque sed turpis malesuada purus placerat dictum. <br>
+            Cras ut urna non quam interdum facilisis ac sit amet nunc. <br>
+            Curabitur in risus ultrices, efficitur lorem faucibus, mollis . <br>
+            Pellentesque et magna commodo neque consequat .</p>
+            
+     
+     <img class="img7"src="..//day 5/9 1.png" alt="">
+        <p class="tag1">Manager</p>
+        <img class="img8"src="../day 5/9 1.png" alt="">
+        <img class="img9"src="../day 5/9 1.png" alt="">
+        <p></p>
+      </body>
+</html>
