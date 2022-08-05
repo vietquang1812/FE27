@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FE27 | M43 Objects</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- <script src="object.js"></script> -->
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-6">
+                <div class="row align-items-center">
+                    <label class="col-4">First Name</label>
+                    <div class="col-8">
+                        <input type="text" class="form-control" name="" value="Nguyen Van" id="first_name" placeholder="First Name">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row align-items-center">
+                    <label class="col-4">Last Name</label>
+                    <div class="col-8">
+                        <input type="text" class="form-control" name="" id="last_name" placeholder="First Name">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <label class="col-2">Gender</label>
+            <div class="col-8">
+                <style>
+                    input+span:after {
+                        content: 'Female';
+                        margin-left: 5px;
+                    }
+                    input:checked+span:after {
+                        content: 'Male';
+                    }
+                </style>
+                <label><input type="checkbox" name="gender" id="gender"><span></span></label>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <label class="col-2">HTML5 & CSS3</label>
+            <div class="col-8">
+                <input type="number" max="10" min="0" id="html5_css3" class="form-control">
+            </div>
+        </div>
+        <div class="row mt-2">
+            <label class="col-2">Javascript</label>
+            <div class="col-8">
+                <input type="number" max="10" min="0" id="javascript" class="form-control">
+            </div>
+        </div>
+        <div class="row mt-2">
+            <label class="col-2">ReactJs</label>
+            <div class="col-8">
+                <input type="number" max="10" min="0" id="reactjs" class="form-control">
+            </div>
+        </div>
+        <div class="row mt-2">
+            <label class="col-2">Project</label>
+            <div class="col-8">
+                <input type="number" max="10" min="0" id="project" class="form-control">
+            </div>
+        </div>
+        <div class="mt-4">
+            <button class="btn btn-primary" type="button" id="submit">Submit</button>
+        </div>
+        <!-- <h1 id="app" class="h1"></h1> -->
+        <h2 class="h2" id="h2">Hello H2</h2>
+    </div>
+    <table class="table" id="table">
+        <thead>
+            <tr>
+                <th>FullName</th>
+                <th>Gender</th>
+                <th>Skills</th>
+                <th>Project</th>
+                <th>AVG</th>
+                <th>Rank</th>
+            </tr>
+        </thead>
+        <tbody id="app">
+
+        </tbody>
+    </table>
+    <script src="object.js"></script>
+</body>
+</html>
