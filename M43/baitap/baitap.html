@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaiTap</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/baitap/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <h2>Lesson 1</h2>
+                <form id="myform">
+                    Number 1: <input type="text" id="t1" placeholder="Enter number 1"><br>
+                    Number 2: <input type="text" id="t2" placeholder="Enter number 2"><br>
+                    <p class="result">Result: <span id="result"></span></p>
+                    <input type="button" value="submit" onclick="checkForm()">
+                </form>
+            </div>
+            <div class="col-12 col-md-4">
+                <h2>Lesson 2</h2>
+                <form id="myform">
+                    <table>
+                        <tr>
+                            <td><p class="result">Result:</p></td>
+                            <td><span id="result2"></span></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="button" value="submit" onclick="bai2()"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="col-12 col-md-4">
+                <h2>Lesson 3</h2>
+                <p>Write a program to input three numbers as math, physics, and chemistry. Output
+                    average and rank accord
+                    ing to the following:</p>
+                    <form id="myform">
+                        <table>
+                            <tr>
+                                <td>Math:</td>
+                                <td><input type="text" id="math" placeholder="Enter math score"></td>
+                            </tr>
+                            <tr>
+                                <td>Physics: </td>
+                                <td><input type="text" id="physics" placeholder="Enter Physics score"></td>
+                            </tr>
+                            <tr>
+                                <td>Chemistry:</td>
+                                <td><input type="text" id="chemistry" placeholder="Enter Chemisttry score"></td>
+                            </tr>
+                            <tr>
+                                <td><p class="result">Result:</td>
+                                <td><span id="result3"></span></p></td>
+                            </tr>
+                        </table>
+                    <input type="button" value="submit" onclick="bai3()">
+                    </form>
+            </div>
+            <div class="col-12 col-md-4">
+                <h2>Lesson 4</h2>
+                <p>Write a program to find x from ax + b =0 equation with a and b are input from
+                    keyboards.</p>
+                <form id="myform">
+                    Number a: <input type="text" id="na" placeholder="Enter number a"><br>
+                    Number b: <input type="text" id="nb" placeholder="Enter number b"><br>
+                    <p class="result">Result: <span id="result4"></span></p>
+                    <input type="button" value="submit" onclick="bai4()">
+                </form>
+            </div>
+            <div class="col-12 col-md-4">
+                <h2>Lesson 5</h2>
+                <p>Write a program to find x from ax
+                    2
+                    + bx + c =0 equation with a and b are input from
+                    keyboards.</p>
+                    <form id="myform">
+                        Number a: <input type="text" id="numa" placeholder="Enter number a"><br>
+                        Number b: <input type="text" id="numb" placeholder="Enter number b"><br>
+                        Number b: <input type="text" id="numc" placeholder="Enter number c"><br>
+                        <p class="result">Result: <span id="result5"></span></p>
+                        <input type="button" value="submit" onclick="bai5()">
+                    </form>
+            </div>
+            <div class="col-12 col-md-4">
+                <h2>Lesson 6</h2>
+                <p>Write a program to
+                    input a number after
+                    calculate sum of 50 integer number next</p>
+                    <form id="myform">
+                        Input a number: <input type="text" id="sumnum" placeholder="Enter number a"><br>
+                        <p class="result">Result: <span id="result6"></span></p>
+                        <input type="button" value="submit" onclick="bai6()">
+                    </form>
+            </div>
+            <div class="col-12 col-md-4">
+                <h2>Lesson 7</h2>
+                <p>Write a program to print to screen first 20 numbers of Fibonacci numbers.</p>
+                    <form id="myform">
+                        Input a number: <input type="text" id="fibo" placeholder="Enter a number"><br>
+                        <p class="result">Result: <span id="result7"></span></p>
+                        <input type="button" value="submit" onclick="bai7()">
+                    </form>
+            </div>
+            <div class="col-12 col-md-4">
+                <h2>Lesson 8</h2>
+                <p>Write a program to accepts a number n from 1 to 12 and then print
+                    number of days in month n of the current year. If user enter a
+                    number out of range an error message will display.
+                    Hint: Use switch case statement</p>
+                    <form id="myform">
+                        Input a Month: <input type="text" id="month" placeholder="Enter a month"><br>
+                        <p class="result">Result: <span id="result8"></span></p>
+                        <input type="button" value="submit" onclick="bai8()">
+                    </form>
+            </div>
+            <div class="col-12 col-md-4">
+                <h2>Lesson 9</h2>
+                <p>Write program to accepts two integer numbers (a and b), then
+                    calculate and display their greatest common divisor.</p>
+                    <form id="myform">
+                        Input a Number 1: <input type="text" id="ucln1" placeholder="Enter a number 1"><br>
+                        Input a Number 2: <input type="text" id="ucln2" placeholder="Enter a number 2"><br>
+                        <p class="result">Result: <span id="result9"></span></p>
+                        <input type="button" value="submit" onclick="bai9()">
+                    </form>
+            </div>
+            <div class="col-12 col-md-4">
+                <h2>Lesson 10</h2>
+                <p>Write a program to accept an integer number and print the triangle
+                    as below:</p>
+                    <form id="myform">
+                        <table>
+                            <tr>
+                                <td>Input a Number:</td>
+                                <td><input type="text" id="tg1" placeholder="Enter a month"></td>
+                            </tr>
+                            <tr>
+                                <td><p class="result">Result:</p></td>
+                                <td><span id="result10"></span></p></td>
+                            </tr>
+                        </table>
+                        <input type="button" value="submit" onclick="bai10()">
+                    </form>
+            </div>
+        </div>
+    </div>
+    <script src="../js/baitap/bai10.js"></script>
+    <script src="../js/baitap/bai8.js"></script>
+    <script src="../js/baitap/bai9.js"></script>
+    <script src="../js/baitap/bai7.js"></script>
+    <script src="../js/baitap/bai6.js"></script>
+    <script src="../js/baitap/bai5.js"></script>
+    <script src="../js/baitap/bai4.js"></script>
+    <script src="../js/baitap/bai3.js"></script> 
+    <script src="../js/baitap/bai2.js"></script>
+    <script src="../js/baitap/bai1.js"></script> 
+</body>
+</html>
