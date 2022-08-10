@@ -1,4 +1,4 @@
-"use strictt"
+'use strictt'
 
 const $ = (id) => {
   return document.getElementById(id)
@@ -7,51 +7,51 @@ const $ = (id) => {
 let is_continue = false
 let averages = []
 
-let math = prompt('Please enter math score: ')
-let physics = prompt('Please enter physics score: ')
-let chemistry = prompt('please enter chemistry score: ')
-
-let average = (parseFloat(math + physics + chemistry) / 3).toFixed(1)
-
 do {
+  let math = prompt('Please enter math score: ')
+  math = parseInt(math)
+  let physics = prompt('Please enter physics score: ')
+  physics = parseInt(physics)
+  let chemistry = prompt('please enter chemistry score: ')
+  chemistry = parseInt(chemistry)
   math = parseInt(math)
   physics = parseInt(physics)
   chemistry = parseInt(chemistry)
+  let average = ((math + physics + chemistry) / 3).toFixed(1)
+  console.log(average)
 
   if (isNaN(math) || isNaN(physics) || isNaN(chemistry)) {
     alert('Value is not a number')
   } else {
     averages[averages.length] = {
-      avg: average,
-      rank: aveRage(avg)
+      average: average,
+      rank: aveRage(average),
     }
   }
-  is_continue = confirm('do u want to continue?');
+  is_continue = confirm('do u want to continue?')
 } while (is_continue)
 
-
 function aveRage(avg) {
-  let rank = document.getElementById('rank')
   if (avg >= 8.0) {
-    rank.innerHTML = 'A'
+    return 'A'
   } else if (avg >= 6.5) {
-    rank.innerHTML = 'B'
+    return 'B'
   } else if (avg >= 5) {
-    rank.innerHTML = 'C'
+    return 'C'
   } else {
-    rank.innerHTML
+    return 'D'
   }
 }
 
-showResult();
+showResult()
 
 function showResult() {
-  let html = '';
+  let html = ''
   for (let i = 0; i < averages.length; i++) {
-    html =  `<tr>
-        <td>${averages[i].avg}</td>
+    html += `<tr>
+        <td>${averages[i].average}</td>
         <td>${averages[i].rank}</td>
     </tr>`
   }
-  $('app').innerHTML = html;
+  $('app').innerHTML = html
 }
