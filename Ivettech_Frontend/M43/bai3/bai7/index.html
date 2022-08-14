@@ -1,0 +1,57 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/bai3/css/bootstrap.min.css" />
+		<title>Bai 7</title>
+		<style>
+			.btn-submit {
+				width: 100px;
+				height: 50px;
+				color: #fff;
+				text-transform: uppercase;
+				font-weight: 700;
+				margin: 0 auto;
+				text-align: center;
+				padding: 10px 20px;
+				border-radius: 10px;
+				background-color: rgb(174, 0, 255);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="col-12 col-md-4" style="padding-left: 20px;">
+			<div class="row">
+				<div class="col-12">
+					<p>Tạo ra một số ngẫu nhiên từ 0->1000 in ra giải thưởng nhận được</p>
+				</div>
+				<div class="col-3">
+					<p>Số ngẫu nhiên được chọn</p>
+				</div>
+				<div class="col-9">
+					<p id="number">Number</p>
+				</div>
+			</div>
+			<div class="row mt-1">
+				<div class="col-3">
+					<p>Result</p>
+				</div>
+				<div class="col-9">
+					<p id="result">Result</p>
+				</div>
+			</div>
+			<input
+				type="button"
+				class="btn-submit"
+				value="submit"
+				onclick="randomNumber()"
+			/>
+		</div>
+
+		<script src="index.js"></script>
+	</body>
+</html>
