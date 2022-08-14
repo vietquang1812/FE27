@@ -4,6 +4,100 @@ const $ = (id) => {
   return document.getElementById(id)
 }
 
+let data = [];
+
+function addProduct() {
+  let order_id = $('orderId').value;
+  let name = $('name').value;
+  let price = $('price').value;
+  price = parseInt(price);
+  let quantity = $('quantity').value;
+  quantity = parseInt(quantity);
+  let amount = price * quantity;
+  let item = {
+    Id: order_id,
+    Name: name,
+    Price: price,
+    Quantity: quantity,
+    Amount: amount,
+  }
+
+  let index = data.findIndex((c)=>c.Id == item.id);
+
+  if (index >= 0) {
+    data.splice(index, 1, item);
+  } else {
+    data.push(item);
+    console.log(data);
+  }
+  renderData();
+  totalAmount();
+  clearData();
+}
+
+function renderData() {
+  let table = `<tr>
+    <th>Order ID</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Quantity</th>
+    <th>Total</th>
+    <th>Actions</th>
+  </tr>`
+  for(let i = 0; i < data.length; i++) {
+    table += `<tr>
+      <th>${data[i].Id}</th>
+      <th>${data[i].Name}</th>
+      <th>${data[i].Price}</th>
+      <th>${data[i].Quantity}</th>
+      <th>${data[i].Amount}</th>
+      <th>
+        <button onclick="deleteItem(${data[i].Id})>Delete</button>
+        <button type="button" onclick="editItem(${data[i].Id})>Edit</button>
+      </th>
+    </tr>`
+  }
+  $('render').innerHTML = table;
+}
+
+function clearData() {
+  $('orderId').value = "";
+  $('name').value = "";
+  $('price').value = "";
+  $('quantity').value = "";
+}
+
+function deleteItem(id) {
+  for(let i = 0; i < data.length; i++) {
+    if(data[i].Id == id) {
+      data.splice(i, 1);
+      renderData();
+      totalAmount();
+    }
+  }
+}
+
+function editItem(id) {
+  for(let i = 0; i < data.length; i++) {
+    if(data[i].Id == id) {
+      $('orderId').value = data[i].Id;
+      $('name').value = data[i].Name;
+      $('price').value = data[i].Price;
+      $('quantity').value = data[i].Quantity;
+    }
+  }
+} 
+
+function totalAmount() {
+  let sum = 0;
+  for(let i = 0; i < data.length; i++) {
+    let total = data[i].Amount;
+    sum += total;
+  }
+  $('resultTotal').innerHTML = sum;
+  console.log(sum);
+}
+
 let orderIdArr = [];
 
 $('form').onsubmit = function(e) {

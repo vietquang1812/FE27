@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -7,12 +9,19 @@
 		<link rel="stylesheet" href="/bai1/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="/bai2/css/index.css" />
 		<title>Bai 2 - Javascript - Form</title>
+		<style>
+			#resultTotal {
+				color: red;
+				margin-left: 20px;
+				font-weight: bold;
+			}
+		</style>
 	</head>
 	<body>
 		<form action="" id="form">
 			<div class="container" id="container">
-				<div class="row mt-4 align-items-center">
-					<label class="col-4">Order ID</label>
+				<div class="row align-items-center">
+					<label class="col-3">Order ID</label>
 					<div class="col-8">
 						<input
 							type="text"
@@ -26,23 +35,23 @@
 						</p>
 					</div>
 				</div>
-				<div class="row mt-4 align-items-center">
-					<label class="col-4">Name</label>
+				<div class="row align-items-center">
+					<label class="col-3">Name</label>
 					<div class="col-8">
 						<input
-							type="name"
+							type="text"
 							id="name"
 							name="name"
 							placeholder="Please enter name"
 							class="form-control"
 						/>
 						<p class="text-danger" id="name_error">
-							<span></span>
+							<span>*</span>
 						</p>
 					</div>
 				</div>
-				<div class="row mt-4 align-items-center">
-					<label class="col-4">Price</label>
+				<div class="row align-items-center">
+					<label class="col-3">Price</label>
 					<div class="col-8">
 						<input
 							type="text"
@@ -52,12 +61,12 @@
 							class="form-control"
 						/>
 						<p class="text-danger" id="price_error">
-							<span></span>
+							<span>*</span>
 						</p>
 					</div>
 				</div>
-				<div class="row mt-4 align-items-center">
-					<label class="col-4">Quantity</label>
+				<div class="row align-items-center">
+					<label class="col-3">Quantity</label>
 					<div class="col-8">
 						<input
 							type="text"
@@ -67,18 +76,40 @@
 							class="form-control"
 						/>
 						<p class="text-danger" id="quantity_error">
-							<span></span>
+							<span>*</span>
 						</p>
 					</div>
 				</div>
 
-				<button type="submit" id="submit" class="btn btn-primary mt-5 p-6">
+				<button
+					type="submit"
+					id="submit"
+					class="btn btn-primary mt-2 mb-4 p-6"
+					onclick="addProduct()"
+				>
 					Submit
 				</button>
-				<button type="total" id="total" class="btn btn-warning mt-5 p-6">
-					Total
-				</button>
-				<div id="app"></div>
+				<br />
+				<table class="table" id="render">
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>Name</th>
+							<th>Price</th>
+							<th>Quantity</th>
+							<th>Total</th>
+							<th>Actions</th>
+						</tr>
+					</thead>
+				</table>
+				<table>
+					<tr>
+						<td><p>Total amount:</p></td>
+						<td>
+							<p id="resultTotal"></p>
+						</td>
+					</tr>
+				</table>
 			</div>
 		</form>
 		<script src="index.js"></script>
