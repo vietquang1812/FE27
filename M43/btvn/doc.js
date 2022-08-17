@@ -1,6 +1,9 @@
 'use strict';
 
 let str = '123456789';
+const hauto = ['', ' nghin ', ' trieu ', ' ty '];
+const chuso = ['khong', 'mot', 'hai', 'ba', 'bon', 'nam', 'sau', 'bay', 'tam', 'chin'];
+
 let n = str.length;
 let ar = [];
 do{
@@ -16,12 +19,10 @@ do{
 } while(str != '');
 let html = '';
 ar.forEach((item, i) => {
-    html += docso(item, i);
+    html = docso(item, i) + html;
 })
 alert(html);
 
-const hauto = ['ty', 'trieu', 'nghin', ''];
-const chuso = ['chin', 'tam', 'bay', 'sau', 'nam', 'bon', 'ba', 'hai', 'mot', 'khong'];
 
 function docso(num, i) {
     num = parseInt(num);
@@ -29,5 +30,6 @@ function docso(num, i) {
     const hangTram = Math.floor(num /100);
     const hangChuc = Math.floor(num / 10 ) - hangTram*10;
     const hangDonvi = num % 10;
-    return chuso[hangTram] +' Tram' + chuso[hangChuc] + 'Muoi' + chuso[hangDonvi] + ' ' + hauto[i];
+
+    return chuso[hangTram] +' Tram ' + chuso[hangChuc] + ' Muoi ' + chuso[hangDonvi] + ' ' + hauto[i];
 }

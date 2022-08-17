@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FE27 | M43 Objects</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        .w100 {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">Salary</div>
+
+        </div>
+        <div class="card-body">
+            <div class="row mt-4">
+                <div class="col-4">
+                    <input type="text" class="form-control" id="name" placeholder="Name Employee">
+                    <input type="number" class="form-control mt-2" name="sell" id="sell" placeholder="Sell">
+                    <button type="button" class="btn w100 btn-primary mt-4" id="add">Add</button>
+                </div>
+                <div class="col-8">
+                    <div class="border">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Sell</th>
+                                    <th>Salary</th>
+                                    <th>Tax</th>
+                                    <th>Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody id="app"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
