@@ -77,8 +77,8 @@ PeoPle.prototype.initRowPeoPle = function(index, $action) {
     const $fullname = $td(this.fullname);
     const $gender = $td(this.gender);
     const $bod = $td(this.bod);
-    const tr = $tr([$index, $fullname, $gender, $bod, $action]);
-    return tr;
+    const $row = $tr([$index, $fullname, $gender, $bod, $action]);
+    return $row;
 }
 
 const managerPeople = {
@@ -122,6 +122,7 @@ managerPeople.add = function(fullname, gender, bod, hh_id) {
     const pp = new PeoPle(this.auto_increase_id++, fullname,gender,bod, hh_id);
     this.peoples.push(pp);
     this.set();
+    this.setForm(new PeoPle());
     managerHouseHole.show();
 }
 managerPeople.update = function(id, fullname, gender, bod, hh_id) {
@@ -152,8 +153,9 @@ managerPeople.delete = function(id) {
 }
 
 managerPeople.deleteByHH = function(hh_id) {
-    this.peoples = [...this.peoples.filter(p => p.hh_id == hh_id)];
+    this.peoples = this.peoples.filter(p => p.hh_id != hh_id);
     this.set();
+    managerHouseHole.show();
 }
 
 managerPeople.show = function(hh_id) {
