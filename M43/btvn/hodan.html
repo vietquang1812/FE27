@@ -28,7 +28,8 @@
                         <input type="text" name="" id="address" placeholder="Address" class="form-control">
                     </div>
                     <div class="col-4">
-                        <button type="button" id="add_hodan" class="btn btn-primary">submit</button>
+                        <button type="button" id="add_houseHole" class="btn btn-primary">submit</button>
+                        <button type="button" id="update_houseHole" class="btn btn-info ms-2 d-none">Update</button>
                     </div>
                 </div>
             </div>
@@ -40,7 +41,7 @@
             <div class="card-body">
                 <div class="row mt-4">
                     <div class="col-3">
-                        <select name="" id="hodan" class="form-control">
+                        <select name="" id="houseHole" class="form-control">
                             <option value="" disabled hidden selected>Please Select HD</option>
                         </select>
                     </div>
@@ -48,13 +49,14 @@
                         <input type="text" name="fullname" id="fullname" placeholder="fullname" class="form-control">
                     </div>
                     <div class="col-1">
-                       <label> <input type="checkbox" name="gender"><span></span></label>
+                       <label> <input type="checkbox" name="gender" id="gender"><span></span></label>
                     </div>
                     <div class="col-3">
                         <input type="date" id="bod" class="form-control">
                     </div>
                     <div class="col-2">
                         <button type="button" id="add_people" class="btn btn-primary">Add</button>
+                        <button type="button" id="update_people" class="btn btn-info d-none ms-2">Update</button>
                     </div>
                 </div>
             </div>
@@ -79,5 +81,7 @@
             </div>
         </div>
     </div>
+
+    <script src="./hodan.js"></script>
 </body>
 </html>
