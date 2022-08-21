@@ -24,15 +24,7 @@
 				</div>
 				<div class="card-body">
 					<div class="row">
-						<div class="col-4">
-							<input
-								type="text"
-								class="form-control"
-								id="household_id"
-								placeholder="ID"
-							/>
-						</div>
-						<div class="col-4">
+						<div class="col-6">
 							<input
 								type="text"
 								class="form-control"
@@ -44,6 +36,13 @@
 							<button type="button" class="btn btn-primary" id="add_household">
 								Submit
 							</button>
+							<button
+							type="button"
+							id="update_household"
+							class="btn btn-warning d-none"
+						>
+							Update
+						</button>
 						</div>
 					</div>
 				</div>
@@ -60,14 +59,6 @@
 									</option>
 								</select>
 							</div>
-							<div class="col-2">
-								<input
-									type="text"
-									class="form-control"
-									id="people_id"
-									placeholder="People ID"
-								/>
-							</div>
 							<div class="col-3">
 								<input
 									type="text"
@@ -78,7 +69,7 @@
 							</div>
 							<div class="col-1">
 								<label>
-									<input type="checkbox" name="gender" /><span></span>
+									<input type="checkbox" name="gender" id="gender" /><span></span>
 								</label>
 							</div>
 							<div class="col-3">
@@ -89,10 +80,10 @@
 									placeholder="Relationship"
 								/>
 							</div>
-							<div class="col-2 mt-4">
+							<div class="col-3">
 								<input type="date" class="form-control" id="birthday" />
 							</div>
-							<div class="col-2 mt-4">
+							<div class="col-3 mt-4">
 								<input
 									type="text"
 									class="form-control"
@@ -110,7 +101,7 @@
 								</button>
 								<button
 									type="button"
-									id="update"
+									id="update_people"
 									class="btn btn-warning mt-4 d-none"
 								>
 									Update
