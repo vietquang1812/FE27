@@ -94,6 +94,8 @@ const managerPeople = {
     deleteByHH: null,
     setForm: null,
     initTable: null,
+    count: null,
+    validate: null,
 }
 const managerHouseHole = {
     get: null,
@@ -105,6 +107,8 @@ const managerHouseHole = {
     show: null,
     delete: null,
     setForm: null,
+    validate: null,
+    setSelect: null,
 }
 
 managerPeople.get = function() {
