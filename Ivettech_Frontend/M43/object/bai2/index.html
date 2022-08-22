@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<style>
+			input[name='gender'] + span:before {
+				content: 'Female';
+				margin-left: 5px;
+			}
+			input[name='gender']:checked + span:before {
+				content: 'Male';
+			}
+		</style>
+		<title>Bai 2 - Object</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="card mt-3">
+				<div class="card-header">
+					<h3 class="card-title">Khach san</h3>
+				</div>
+				<div class="card-body">
+					<div class="row">
+            <div class="col-3">
+							<input
+								type="text"
+								class="form-control"
+								id="roomID"
+								placeholder="Room ID"
+							/>
+						</div>
+            <div class="col-3">
+							<input
+								type="text"
+								class="form-control"
+								id="roomType"
+								placeholder="Room type"
+							/>
+						</div>
+            <div class="col-3">
+							<input
+								type="number"
+								class="form-control"
+								id="roomPrice"
+								placeholder="Room price"
+							/>
+						</div>
+            <div class="col-3">
+							<input
+								type="date"
+								class="form-control"
+								id="checkinDate"
+								placeholder="Checkin Date"
+							/>
+						</div>
+            <div class="col-3 mt-3">
+							<input 
+								type="date"
+								class="form-control"
+								id="checkoutDate"
+								placeholder="Checkout Date"
+							/>
+						</div>
+						<div class="col-3 mt-3">
+							<button type="button" class="btn btn-primary" id="add_hotel">
+								Submit
+							</button>
+							<button
+							type="button"
+							id="update_hotel"
+							class="btn btn-warning d-none"
+						>
+							Update
+						</button>
+						</div>
+					</div>
+				</div>
+				<div class="card mt-3">
+					<div class="card-header">
+						<h3 class="card-title">Khach hang</h3>
+					</div>
+					<div class="card-body">
+						<div class="row">
+							<div class="col-2">
+								<select name="" id="room" class="form-control">
+									<option value="" disabled hidden selected>
+										Please Select room
+									</option>
+								</select>
+							</div>
+							<div class="col-3">
+								<input
+									type="text"
+									class="form-control"
+									id="fullName"
+									placeholder="Full Name"
+								/>
+							</div>
+							<div class="col-1">
+								<label>
+									<input type="checkbox" name="gender" id="gender" /><span></span>
+								</label>
+							</div>
+              <div class="col-3">
+								<input type="date" class="form-control" id="birthday" />
+							</div>
+							<div class="col-3">
+								<input
+									type="text"
+									class="form-control"
+									id="cardID"
+									placeholder="Card ID"
+								/>
+							</div>
+							<div class="col-4">
+								<button
+									type="button"
+									class="btn btn-primary mt-4"
+									id="add_guest"
+								>
+									Add
+								</button>
+								<button
+									type="button"
+									id="update_guest"
+									class="btn btn-warning mt-4 d-none"
+								>
+									Update
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card mt-3">
+					<div class="card-header">
+						<h3 class="card-title">Danh sach phong</h3>
+					</div>
+					<div class="card-body">
+						<table class="table mt-4">
+							<thead>
+								<tr>
+									<th>No.</th>
+                  <th>Room ID</th>
+									<th>Number</th>
+                  <th>Room type</th>
+									<th>Room price</th>
+									<th>Checkin Date</th>
+                  <th>Checkout Date</th>
+									<th>
+										Detail
+									</th>
+									<th>Action</th>
+								</tr>
+							</thead>
+							<tbody id="app"></tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>
