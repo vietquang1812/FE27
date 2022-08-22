@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin/Product</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="card mt-5">
+            <div class="card-header">
+                <h3 class="card-title">Product</h3>
+            </div>
+            <div class="card-body">
+                <div class="row mt-4">
+                    <div class="col-md-3">
+                        <input type="text" id="product_name" class="form-control" placeholder="Product Name">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" id="product_image" class="form-control" placeholder="Image Url">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="number" id="product_price" class="form-control" placeholder="Price">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="number" id="product_quantity" class="form-control" placeholder="Quantity">
+                    </div>
+                    <div class="col-12 mt-4">
+                        <button type="button" id="add_product" class="btn btn-primary">Add</button>
+                        <button type="button" id="update_product" class="btn btn-info d-none">Update</button>
+                        <button type="button" id="update_product" class="btn btn-secondary d-none">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card mt-5">
+            <div class="card-header">
+                <h3 class="card-title">Products</h3>
+            </div>
+            <div class="card-body">
+                <div id="products" class="mt-2">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/js/common.js"></script>
+    <script src="/assets/js/product.js"></script>
+</body>
+</html>
