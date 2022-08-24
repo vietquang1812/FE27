@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Page</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card mt-4">
+      <div class="card-header">
+        <h3 claass="card-title">Product</h3>
+      </div>
+      <div class="card-body">
+        <div class="row mt-3">
+          <div class="col-lg-3">
+            <input type="text" id="product_name" class="form-control" placeholder="Product Name">
+          </div>
+          <div class="col-lg-3">
+            <input type="text" id="product_image" class="form-control" placeholder="Product Image">
+          </div>
+          <div class="col-lg-3">
+            <input type="number" id="price" class="form-control" placeholder="Price">
+          </div>
+          <div class="col-lg-3">
+            <input type="number" id="quantity" class="form-control" placeholder="Quantity">
+          </div>
+          <div class="col-4 mt-3">
+            <button type="button" id="add_product" class="btn btn-primary">Add</button>
+            <button type="button" id="update_product" class="btn btn-warning d-none">Update</button>
+            <button type="button" id="cancel" class="btn btn-secondary d-none">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mt-4">
+      <div class="card-header">
+        <h3 class="card-title">Products List</h3>
+      </div>
+      <div class="card-body">
+        <div class="mt-2">
+          <table class="table mt-3">
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Image</th>
+                <th>
+                  Price
+                </th>
+                <th>Quantity</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="products"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="assets/js/public.js"></script>
+  <script type="module" src="assets/js/product.js"></script>
+</body>
+</html>
