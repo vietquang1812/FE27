@@ -14,3 +14,4 @@ managerHome.show = function() {
 }
 
 managerHome.show();
+managerCart.show();

@@ -35,7 +35,11 @@ managerCart.add_to_card = function(id) {
     this.store.set();
 }
 managerCart.show = function() {
-    const $thead = common.$titles(['No.', 'Name', 'Quantity', 'Amount']);
+    const has_image = location.pathname.indexOf('payment.html') >=0
+    let titles = ['No.', 'Name', 'Quantity', 'Amount'];
+    if(has_image) titles.splice(2,0,'Image');
+
+    const $thead = common.$titles(titles);
     let $rows = [];
     let sum = 0;
     this.line_items.forEach((item, i) => {
@@ -56,7 +60,13 @@ managerCart.show = function() {
 
         const $div = common.$div('d-flex justify-content-between', [$dec, $quantity, $inc]);
         const $cell_quatity = common.$cell($div);
-        $rows.push(common.$row([$no, $name,$cell_quatity,$amount]));
+        
+        let $row = [$no, $name,$cell_quatity,$amount];
+        if(has_image) {
+            const $image = common.$cellImage(p.url);
+            $row.splice(2, 0, $image);
+        }
+        $rows.push(common.$row($row));
 
     })
     $('cart').innerHTML = '';
@@ -86,4 +96,3 @@ managerCart.change_quantity = function(id, num) {
     
 }
 managerCart.store.get();
-managerCart.show();
