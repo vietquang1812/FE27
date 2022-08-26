@@ -11,10 +11,17 @@ common.$row = $items => {
     return $tr;
 }
 
-common.$cell = text => {
+common.$cell = (text, classes = '') => {
+    
     const $td = document.createElement('td');
-    const $text = document.createTextNode(text);
-    $td.appendChild($text);
+    if(typeof text == 'object') {
+        $td.appendChild(text);
+    } else {
+        const $text = document.createTextNode(text);
+        $td.appendChild($text);
+        $td.className = classes;
+    }
+    
     return $td;
 }
 
