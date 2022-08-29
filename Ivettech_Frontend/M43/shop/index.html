@@ -14,180 +14,94 @@
 
 		<title>Shop Page</title>
 		<style>
+			header {
+				position: fixed;
+				top: 0;
+				left: 0;
+				padding: 20px 0;
+				width: 100%;
+				background-color: rgba(0, 0, 0, 0.023);
+			}
 			.navbar {
 				display: flex;
 				flex-direction: row;
-				justify-content: space-between;
-				background-color: #a2b0d6;
-				padding: 25px 60px;
-				margin-bottom: 30px;
 			}
-
-			a {
-				text-decoration: none;
+			main {
+				padding-top: 160px;
 			}
-
-			.shop_title {
-				text-transform: uppercase;
-				font-weight: 700;
-				color: #000;
-			}
-			.cart {
-				flex: 1 1 0px;
-				position: relative;
-				font-size: 35px;
-				padding: 10px;
-				border-radius: 4px;
-			}
-
-			.cart i {
-				background-color: rgb(113, 129, 147);
-				color: #fff;
-			}
-
-			.cart_amount {
-				position: absolute;
-				top: -15px;
-				right: -10px;
-				font-size: 16px;
-				background-color: red;
-				color: white;
-				padding: 3px;
-				border-radius: 3px;
-			}
-
-			.w100 {
+			.img-product {
 				width: 100%;
+				height: 200px;
 				object-fit: cover;
-				height: 100%;
 			}
 		</style>
 	</head>
 	<body>
-		<div class="container">
-			<div class="navbar">
-				<a href="index.html">
-					<h2 class="shop_title">Online Store</h2>
-				</a>
-
-				<a href="cart.html">
-					<div class="cart">
-						<i class="bi bi-cart"></i>
-						<div id="cartAmount" class="cart_amount">0</div>
-					</div>
-				</a>
+		<header>
+			<div class="container">
+				<div class="d-flex justify-content-between">
+					<img src="images/logo.jpg" width="120" alt="" />
+					<nav class="navbar navbar-expand-lg">
+						<div class="list-group bg-gradient list-group-horizontal">
+							<a
+								href="./index.html"
+								class="list-group-item list-group-item-action active"
+								>Home</a
+							>
+							<a href="#" class="list-group-item list-group-item-action"
+								>Product</a
+							>
+							<a href="#" class="list-group-item list-group-item-action"
+								>Category</a
+							>
+							<a href="#" class="list-group-item list-group-item-action"
+								>Contact Us</a
+							>
+							<a href="#" class="list-group-item list-group-item-action"
+								>About Us</a
+							>
+							<a href="#" class="list-group-item list-group-item-action"
+								>Login</a
+							>
+							<a href="#" class="list-group-item list-group-item-action"
+								>Register</a
+							>
+						</div>
+					</nav>
+				</div>
 			</div>
+		</header>
 
-			<figure>
-				<img class="img-fluid w100" src="images/images.jpeg" alt="" />
-			</figure>
-			<div class="list-group bg-gradient list-group-horizontal">
-				<a href="./content.html" class="list-group-item list-group-item-action"
-					>Home</a
-				>
-				<a
-					href="./product.html"
-					class="list-group-item list-group-item-action active"
-					>Product</a
-				>
-				<a href="./category.html" class="list-group-item list-group-item-action"
-					>Category</a
-				>
-				<a href="./contact.html" class="list-group-item list-group-item-action"
-					>Contact Us</a
-				>
-				<a href="#" class="list-group-item list-group-item-action">About Us</a>
-			</div>
+		<main class="container">
+			<div class="row">
+				<div class="col-12 col-lg-8">
+					<h3 class="h3">Products</h3>
+					<div id="products" class="row"></div>
+				</div>
+				<div class="col-12 col-lg-4">
+					<div class="card">
+						<div class="card-header">
+							<h3 class="card-title">Cart</h3>
+						</div>
+						<div class="card-body">
+							<div id="cart"></div>
+						</div>
+						<div class="card-footer">
+							<div class="d-flex justify-content-between">
+								Total
+								<span class="cl-info" id="total"></span>
+							</div>
+							<a href="./payment.html" class="mt-4 btn btn-primary">Payment</a>
 
-			<div class="shop" id="shop"></div>
-
-			<!-- <section class="section main">
-				<div class="brands-heading">
-					<div class="row mt-5">
-						<div class="col-md-12 mt-5">
-							<a href="#"
-								><img
-									class="col-md-2 pull-left"
-									src="images/img1.png"
-									height="200"
-									width="400"
-								/>
-							</a>
-							<div class="mb-3 row">
-								<div class="col-md-2"></div>
-								<div class="col-md-10" role="group">
-									<button type="submit" class="btn btn-primary">Details</button>
-									<button type="reset" class="btn btn-secondary">Add Cart</button>
-								</div>
-							</div>
-							<a href="#"
-								><img
-									class="col-md-2 pull-left"
-									src="images/img2.jpg"
-									height="200"
-									width="400"
-								/>
-							</a>
-							<div class="mb-3 row">
-								<div class="col-md-2"></div>
-								<div class="col-md-10" role="group">
-									<button type="submit" class="btn btn-primary">Details</button>
-									<button type="reset" class="btn btn-secondary">Add Cart</button>
-								</div>
-							</div>
-							<a href="#"
-								><img
-									class="col-md-2 pull-left"
-									src="images/img1.png"
-									height="200"
-									width="400"
-								/>
-							</a>
-							<div class="mb-3 row">
-								<div class="col-md-2"></div>
-								<div class="col-md-10" role="group">
-									<button type="submit" class="btn btn-primary">Details</button>
-									<button type="reset" class="btn btn-secondary">Add Cart</button>
-								</div>
-							</div>
-							<a href="#"
-								><img
-									class="col-md-2 pull-left"
-									src="images/img2.jpg"
-									height="200"
-									width="400"
-								/>
-							</a>
-							<div class="mb-3 row">
-								<div class="col-md-2"></div>
-								<div class="col-md-10" role="group">
-									<button type="submit" class="btn btn-primary">Details</button>
-									<button type="reset" class="btn btn-secondary">Add Cart</button>
-								</div>
-							</div>
-							<a href="#"
-								><img
-									class="col-md-2 pull-left"
-									src="images/img1.png"
-									height="200"
-									width="400"
-								/>
-							</a>
-							<div class="mb-3 row">
-								<div class="col-md-2"></div>
-								<div class="col-md-10" role="group">
-									<button type="submit" class="btn btn-primary">Details</button>
-									<button type="reset" class="btn btn-secondary">Add Cart</button>
-								</div>
-							</div>
 						</div>
 					</div>
-				
 				</div>
-			</section> -->
-		</div>
-		<script src="assets/js/data.js"></script>
+			</div>
+		</main>
+
 		<script src="assets/js/public.js"></script>
+		<script src="assets/js/product.js"></script>
+		<script src="assets/js/cart.js"></script>
 		<script src="assets/js/index.js"></script>
 	</body>
 </html>
