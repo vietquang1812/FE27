@@ -70,7 +70,7 @@ managerCart.show = function() {
 
     })
     $('cart').innerHTML = '';
-    $('total').innerHTML = `$${sum}`;
+    $('total').innerHTML = `$${common.formatPrice(sum)}`;
     $('cart').appendChild(common.$table($thead, $rows))
 }
 

@@ -183,7 +183,6 @@
         return this.products.filter(p => p.quantity > 0) 
     }
     managerProduct.find = function(id) {
-        this.store.get();
         return this.products.find(p => p.id == id);
     } 
 

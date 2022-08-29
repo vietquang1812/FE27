@@ -103,3 +103,18 @@ common.$colProduct = (product, handleEvent) => {
     return $col;
 }
 
+common.formatPrice = price => {
+    if(isNaN(price)) {
+        return price;
+    }
+    let text = '';
+    while(price > 0) {
+        const du = price%1000;
+        price = Math.floor(price/1000);
+        text = du+text;
+        if(price > 0) {
+            text = ','+text;
+        }
+    }
+    return text;
+}
