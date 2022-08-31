@@ -76,6 +76,8 @@ managerCart.show = function() {
 
 managerCart.change_quantity = function(id, num) {
     const item = this.line_items.find(t => t.id == id);
+    const product = managerProduct.find(id);
+
     if(item != null) {
         // item.quantity += num;
         if(item.quantity + num <= 0) {
@@ -83,6 +85,8 @@ managerCart.change_quantity = function(id, num) {
             if(confirm_dlte) {
                 this.line_items = this.line_items.filter(t => t.id != id);
             }
+        } else if (item.quantity + num > product.quantity) {
+            alert('out of store');
         } else {
             item.quantity += num;
         }

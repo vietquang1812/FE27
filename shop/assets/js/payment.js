@@ -26,16 +26,20 @@ managerOrder.Order = function(id=0, name="", email = '', mobile='', address='', 
 }
 managerOrder.Order.prototype.itemsTable = function() {
     if(this.line_items.length == 0) return document.createElement('table');
+
     const $thead = common.$titles(['No.', 'Name', 'Price', "Quantity"]);
     let $rows = [];
     this.line_items.forEach((item, index) => {
         const product = managerProduct.find(item.id);
-        const $no = common.$cell(index+1);
-        const $name = common.$cell(product.name);
-        const $price = common.$cell('$'+product.price);
-        const $quantity = common.$cell(item.quantity);
-        const $row = common.$row([$no, $name, $price, $quantity]);
-        $rows.push($row);
+        if(product != null) {
+            const $no = common.$cell(index+1);
+            const $name = common.$cell(product.name);
+            const $price = common.$cell('$'+product.price);
+            const $quantity = common.$cell(item.quantity);
+            const $row = common.$row([$no, $name, $price, $quantity]);
+            $rows.push($row);
+        }
+        
     })
 
     const $table = common.$table($thead, $rows);
@@ -45,7 +49,8 @@ managerOrder.Order.prototype.total = function() {
     let sum = 0;
     this.line_items.forEach(item => {
         const product = managerProduct.find(item.id);
-        sum += item.quantity*product.price;
+        if(product != null)
+            sum += item.quantity*product.price;
     })
     return sum;
 }
@@ -68,7 +73,7 @@ managerOrder.Order.prototype.search = function(s = '') {
 
     this.line_items.forEach(t => {
         const p = managerProduct.find(t.id);
-        if(pattern.test(p.name)) {
+        if(p != null && pattern.test(p.name)) {
             has_product = true;
         }
     })
@@ -95,6 +100,11 @@ managerOrder.add = function(name, email, mobile, address) {
     this.orders.push(
         new managerOrder.Order(this.auto_increate_id++, name, email, mobile, address, managerCart.line_items)
     );
+    managerCart.line_items.forEach(item => {
+        const product = managerProduct.find(item.id);
+        product.quantity -= item.quantity;
+    })
+    managerProduct.store.set();
     this.store.set();
     managerCart.line_items.length = 0;
     managerCart.store.set();

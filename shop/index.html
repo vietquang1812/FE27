@@ -92,11 +92,26 @@
                     </div>
                 </div>
             </div>
+            <button class="btn btn-info" type="button" id="send_request">Send Request</button>
         </div>
     </main>
     <script src="/assets/js/common.js"></script>
     <script src="/assets/js/product.js"></script>
     <script src="/assets/js/cart.js"></script>
     <script src="/assets/js/index.js"></script>
+    <script>
+        $('send_request').onclick = function() {
+        let httpreq = new XMLHttpRequest();
+        
+        httpreq.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+            // Typical action to be performed when the document is ready:
+            console.log(JSON.parse(httpreq.response));
+            }
+        };
+            httpreq.open('get', '/assets/json/data.json',true);
+            httpreq.send()
+        }
+    </script>
 </body>
 </html>

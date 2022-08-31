@@ -54,6 +54,7 @@
             this.products.splice(index, 1);
             this.store.set();
         }
+        this.show();
     }
 
 
