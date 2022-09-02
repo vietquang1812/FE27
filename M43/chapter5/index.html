@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FE27 | M43 DOM & Forms & Controls</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        /* .answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height ease-in-out .3s;
+        } */
+        .answer {
+            display: none;
+        }
+        .quesion {
+            margin-top: 20px;
+        }
+        .cl-green {
+            color: greenyellow;
+        }
+        /* .quesion.cl-green + .answer {
+            max-height: 100vh;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container" id="container">
+        
+        <h2 class="title h2 text-success text-center mt-4">FAQs</h2>
+        <div class="faqs">
+            <h3 class="quesion">What is Javascript?</h3>
+            <p class="answer">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            
+            <h3 class="quesion">What is HTML?</h3>
+            <p class="answer">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            
+            <h3 class="quesion">What is ReactJs?</h3>
+            <p class="answer">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <hr class="hr">
+        <h2 class="h2 mt-5 text-center">Form</h2>
+        <form action="./index.html" id="form" method="get">
+            <div class=" row mt-4 align-items-center">
+                <label class="col-4">Sells</label>
+                <div class="col-8">
+                    <input type="text" id="fullname" name="fullname" placeholder="Your Sell" class="form-control">
+                    <p class="text-danger" id="fullname_error">
+                        <span>*</span>
+                    </p>
+                </div>
+            </div>
+            <div class=" row mt-4 align-items-center">
+                <label class="col-4">Tax</label>
+                <div class="col-8">
+                    <input disabled type="email" id="email" name="email" placeholder="Tax" class="form-control">
+                    <p class="text-danger" id="email_error">
+                        <spanspan>
+                    </p>
+                </div>
+            </div>
+            <div class=" row mt-4 align-items-center">
+                <label class="col-4">Amount</label>
+                <div class="col-8">
+                    <input disabled type="text" id="password" name="password" placeholder="Amount" class="form-control">
+                    <p class="text-danger" id="password_error">
+                        <spanspan>
+                    </p>
+                </div>
+                <label class="col-4">Skills</label>
+                <div class="col-8">
+                    <p><label><input type="checkbox" value="html5_css3" id="html5_css3" name="skills">HTML5 & CSS3</label></p>
+                    <p><label><input type="checkbox" value="javascript" id="javascript" name="skills">Javascript</label></p>
+                    <p><label><input type="checkbox" value="reactJS" id="reactJS" name="skills">ReactJs</label></p>
+                    
+                </div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+            <div id="app"></div>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

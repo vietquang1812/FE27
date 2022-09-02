@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FE27 | Ho dan</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        input[name=gender]+span:before {
+            content: 'Female';
+            margin-left: 5px;
+        }
+        input[name=gender]:checked+span:before {
+            content: 'Male';
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card mt-4">
+            <div class="card-header">
+                <h3 class="card-title">Hodan</h3>
+            </div>
+            <div class="card-body">
+                <div class="row mt-4">
+                    <div class="col-8">
+                        <input type="text" name="" id="address" placeholder="Address" class="form-control">
+                    </div>
+                    <div class="col-4">
+                        <button type="button" id="add_houseHole" class="btn btn-primary">submit</button>
+                        <button type="button" id="update_houseHole" class="btn btn-info ms-2 d-none">Update</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mt-2">
+            <div class="card-header">
+                <h3 class="card-title">Nguoi</h3>
+            </div>
+            <div class="card-body">
+                <div class="row mt-4">
+                    <div class="col-3">
+                        <select name="" id="houseHole" class="form-control">
+                            <option value="" disabled hidden selected>Please Select HD</option>
+                        </select>
+                    </div>
+                    <div class="col-3">
+                        <input type="text" name="fullname" id="fullname" placeholder="fullname" class="form-control">
+                    </div>
+                    <div class="col-1">
+                       <label> <input type="checkbox" name="gender" id="gender"><span></span></label>
+                    </div>
+                    <div class="col-3">
+                        <input type="date" id="bod" class="form-control">
+                    </div>
+                    <div class="col-2">
+                        <button type="button" id="add_people" class="btn btn-primary">Add</button>
+                        <button type="button" id="update_people" class="btn btn-info d-none ms-2">Update</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mt-3">
+            <div class="card-header">
+                <h3 class="card-title">Danh sach ho dan</h3>
+            </div>
+            <div class="card-body">
+                <table class="table mt-4">
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Address</th>
+                            <th>Number</th>
+                            <th>Detail</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="app"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="./hodan.js"></script>
+</body>
+</html>

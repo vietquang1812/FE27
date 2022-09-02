@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FE27 | M43 Tasks Application</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        .w100 {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card mt-5">
+            <div class="card-body">
+                <h3 class="card-title cl-info">TASK MANAGER</h3>
+                <div class="row mt-2">
+                    <div class="col-4">
+                        <input type="text" id="inputTask" class="form-control">
+                        <button class="btn w100 btn-info mt-4 " type="button" id="add">Add Task</button>
+                        <button class="btn w100 btn-warning mt-4 d-none" type="button" id="update">Update</button>
+                        <button class="btn w100 btn-danger mt-2 d-block" type="button" id="clear">Clear</button>
+                    </div>
+                    <div class="col-8 border">
+                        <ul class="list-group" id="tasks"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./tasks.js"></script>
+</body>
+</html>

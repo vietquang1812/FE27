@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="card mt-4">
+            <div class="card-header">Cart</div>
+            <div class="card-body">
+                <div id="cart" class="mt-4"></div>
+            </div>
+            <div class="card-footer d-flex justify-content-between">
+                Total
+                <span id="total"></span>
+            </div>
+        </div>
+        <div class="card mt-4">
+            <div class="card-header">Payment Infomation</div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="row mt-2 align-items-center">
+                            <label class="col-12 col-md-2">Name</label>
+                            <div class="col-12 col-md-10">
+                                <input type="text" id="name" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="row mt-2 align-items-center">
+                            <label class="col-12 col-md-2">Email</label>
+                            <div class="col-12 col-md-10">
+                                <input type="text" id="email" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="row mt-2 align-items-center">
+                            <label class="col-12 col-md-2">Mobile</label>
+                            <div class="col-12 col-md-10">
+                                <input type="text" id="mobile" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="row mt-2 align-items-center">
+                            <label class="col-12 col-md-2">Address</label>
+                            <div class="col-12 col-md-10">
+                                <input type="text" id="address" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <button type="button" class="btn btn-primary" id="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/assets/js/common.js"></script>
+    <script src="/assets/js/product.js"></script>
+    <script src="/assets/js/cart.js"></script>
+    <script src="/assets/js/payment.js"></script>
+
+    <script>
+        managerOrder.init($('submit'))
+        managerCart.show();
+    </script>
+</body>
+</html>
