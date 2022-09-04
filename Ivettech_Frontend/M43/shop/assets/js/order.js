@@ -33,7 +33,7 @@ managerOrders.delete = function(id) {
 
 managerOrders.show = function() {
   $('order').innerHTML = '';
-  let titles = ['No', 'Name', 'Email', 'Mobile', 'Total', 'Action']
+  let titles = ['No', 'Name', 'Email', 'Mobile', 'Address', 'Detail', 'Total', 'Action']
   let $rows = [];
   const $thead = pubLic.$titles(titles);
   console.log(this.order);
@@ -45,6 +45,7 @@ managerOrders.show = function() {
     const $email = pubLic.$cells(o.email);
     const $mobile = pubLic.$cells(o.mobile);
     const $address = pubLic.$cells(o.address);
+    const $detail = pubLic.$cells(o.itemsTable())
 
     item.line_items.forEach(item => {
       const p = managerProduct.find(item.id);
@@ -53,8 +54,8 @@ managerOrders.show = function() {
     const $action = document.createElement('td');
     const $delete = pubLic.$btn('Delete', 'ms-2 btn btn-sm btn-danger', this.delete.bind(this, item.id));
     $action.appendChild($delete);
-    const $total = pubLic.$cells(sum + ' VNĐ ');
-    let $row = [$no, $name, $email, $mobile, $address, $total, $action];
+    const $total = pubLic.$cells(pubLic.formatPrice(sum) + ' VNĐ ');
+    let $row = [$no, $name, $email, $mobile, $address, $detail, $total, $action];
     $rows.push(pubLic.$rows($row));
   })
   $('order').appendChild(pubLic.$table($thead, $rows));

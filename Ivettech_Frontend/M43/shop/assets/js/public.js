@@ -100,3 +100,20 @@ pubLic.$colProduct = (product, handleEvent) => {
   const $col = pubLic.$div('mt-3 col-12 col-sm-6 col-lg-4 col-xl-3', [$card])
   return $col
 }
+
+pubLic.formatPrice = price => {
+  if(isNaN(price)) {
+      return price;
+  }
+  let text = '';
+  while(price > 0) {
+      const du = price % 1000000;
+      price = Math.floor(price / 1000);
+      text = du + text;
+      if(price > 0) {
+          text = ',' + text;
+      }
+  }
+  return text;
+}
+

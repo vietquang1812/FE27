@@ -20,6 +20,28 @@ managerOrder.Order = function(id = 0, name = '', email = '', mobile = '', addres
   this.line_items = line_items;
 }
 
+managerOrder.Order.prototype.itemsTable = function() {
+  if(this.line_items.length == 0) return document.createElement('table');
+
+  const $thead = pubLic.$titles(['No.', 'Name', 'Price', "Quantity"]);
+  let $rows = [];
+  this.line_items.forEach((item, index) => {
+      const p = managerProduct.find(item.id);
+      if(p != null) {
+          const $no = pubLic.$cells(index + 1);
+          const $name = pubLic.$cells(p.name);
+          const $price = pubLic.$cells(p.price + ' VNĐ ');
+          const $quantity = pubLic.$cells(item.quantity);
+          const $row = pubLic.$rows([$no, $name, $price, $quantity]);
+          $rows.push($row);
+      }
+      
+  })
+
+  const $table = pubLic.$table($thead, $rows);
+  return $table;
+}
+
 managerOrder.add = function(name, email, mobile, address) {
   this.orders.push(
     new managerOrder.Order(this.auto_increase_id++, name, email, mobile, address, managerCart.line_items)
@@ -33,8 +55,9 @@ managerOrder.add = function(name, email, mobile, address) {
 }
 
 managerOrder.store.get = function() {
-  managerOrder.orders = JSON.parse(localStorage.getItem('orders') || '[]');
-  managerOrder.auto_increase_id = Math.max(...managerOrder.orders.map(o => o.id), 0) + 1;
+  const orders = JSON.parse(localStorage.getItem('orders') || '[]');
+  managerOrder.orders = orders.map(o => new managerOrder.Order(o.id, o.name,o.email, o.mobile, o.address, o.line_items))
+  managerOrder.auto_increate_id = Math.max(...orders.map(o => o.id), 0) + 1;
 }
 
 managerOrder.store.set = function() {
