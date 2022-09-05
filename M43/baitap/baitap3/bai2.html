@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let n = prompt("Please enter number")
+        num = parseInt(n);
+
+        'use strict'
+
+        function toBinary(n){
+            let binary = "";
+            if (n < 0) {
+            n = n >>> 0;
+            }
+            while(Math.ceil(n/2) > 0){
+                binary = n%2 + binary;
+                n = Math.floor(n/2);
+            }
+            return binary;
+        }
+        
+        document.write('Ket qua chuyen doi la: ' + toBinary(n));
+    </script>
+</body>
+</html>

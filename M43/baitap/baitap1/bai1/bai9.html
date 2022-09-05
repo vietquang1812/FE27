@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let a = prompt(' a: ');
+        let b = prompt(' b: ');
+        a = parseInt(a);
+        b = parseInt(b);
+
+        function gcd(a, b) {
+        if(isNaN(a) || isNaN(b)) {
+            alert("Value is not a number")
+        } else if (a < 0 || b < 0) {
+            alert("Number is not < 0");
+        } else {
+            a = Math.abs(a);
+            b = Math.abs(b);
+            if (b > a) {
+                var temp = a; 
+                a = b; 
+                b = temp;
+            }
+            while (true) {
+                if (b == 0) return a;
+                a %= b;
+                if (a == 0) return b;
+                b %= a;
+                }
+            }
+        }
+        document.write('Uoc chung lon nhat la: ' + gcd(a,b))
+    </script>
+</body>
+</html>

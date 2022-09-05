@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai7</title>
+</head>
+<body>
+    <button type="button" id="btn" onclick="randomNumber()">Random</button>
+    <h3 id="text"></h3>
+    <script>
+        const $ = (id) => {
+        return document.getElementById(id)
+        }
+
+        function randomNumber() {
+            let number = Math.round(Math.random() * 1000);
+            number = parseInt(number);
+            
+            if (number == 1000) {
+                $('text').innerHTML = number +' Giải đặc biệt'
+            } else if (number >= 990 && number <= 999) {
+                $('text').innerHTML = number + ' Giaỉ 1'
+            } else if (number >= 950 && number <= 989) {
+                $('text').innerHTML =number + ' Giải 2'
+            } else if (number >= 870 && number <= 949) {
+                $('text').innerHTML =number + ' Giải 3'
+            } else if (number >= 750 && number <= 869) {
+                $('text').innerHTML =number + ' Giải 4'
+            } else if (number >= 550 && number <= 749) {
+                $('text').innerHTML =number + ' Giải 5'
+            } else if (number >= 350 && number <= 549) {
+                $('text').innerHTML =number + ' Giải 6'
+            } else {
+                $('text').innerHTML = number + ' Giải 7'
+            }
+        }
+    </script>
+</body>
+</html>

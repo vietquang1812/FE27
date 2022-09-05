@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        function bangcuuchuong(){
+            document.write("<table border=1 width=100%>")
+            for(i=1;i<=9;i++)   
+            {
+                document.write("<tr>")
+            for(n=2;n<=9;n++)   
+                document.write("<td>" +n + "x" + i +"="+ (n*i));
+                document.write("</td>");
+                document.write("</tr>")
+            }
+            document.write("</tr></table>")
+        }
+
+        bangcuuchuong();
+    </script>
+</body>
+</html>

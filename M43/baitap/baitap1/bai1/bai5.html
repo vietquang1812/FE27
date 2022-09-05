@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 5</title>
+</head>
+<body>
+        <h1>Giải phuongw trình bậc 2</h1>
+
+        <script>
+            let a = prompt('Please enter number a')
+            let b = prompt('Please enter number b')
+            let c = prompt('Please enter number c')
+            a = parseInt(a);
+            b = parseInt(b);
+            c = parseInt(c);
+
+            let delta = (b*b-4*a*c);
+            function phuong_trinh_bac_2(a,b,c) {
+                if(isNaN(a) || isNaN(b) || isNaN(c) ) {
+                    alert('Day khong pha la so')
+                }else {
+                    if(delta == 0) {
+                        alert(`Phuong trinh co nghiem kep x1 = x2 : ${-(b / (2*a))}`)
+                    }else if(delta < 0) {
+                        alert('Phuong trinh vo nghiem')
+                    }else{
+                        alert(`Phuong trinh co 2 nghiem phan biet x1 : ${(-b+Math.sqrt(delta)) / (2*a)}     x2 : ${(-b-Math.sqrt(delta)) / (2*a)}`)
+                    }
+                }
+            }
+
+            phuong_trinh_bac_2(a,b,c);
+        </script>
+</body>
+</html>

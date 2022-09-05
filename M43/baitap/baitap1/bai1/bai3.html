@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai 3</title>
+</head>
+<body>
+    
+    <script>
+            let math = prompt('math score: ')
+            math = parseInt(math)
+            let physics = prompt('physics score: ')
+            physics = parseInt(physics)
+            let chemistry = prompt('chemistry score: ')
+            chemistry = parseInt(chemistry)
+
+            let avg = ((math + physics + chemistry) / 3).toFixed(1);
+
+            if(math < 0 || physics < 0 || chemistry < 0 || math > 10 || physics > 10 || chemistry > 10) {
+                alert('diem khong be hon 0 , lon hon 10 ');
+            }
+            else {
+                if(avg < 5) {
+                    alert(avg + ' rank D');
+                }
+                else if(avg >= 5 && avg < 6.5) {
+                    alert(avg + ' rank c');
+                }else if(avg >= 6.5 && avg < 8) {
+                    alert(avg + ' rank B');
+                }
+                else {
+                    alert(avg + ' rank A');
+    
+                }
+            }
+            
+    </script>
+</body>
+</html>

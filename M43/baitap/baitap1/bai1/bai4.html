@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+</head>
+<body>
+    <script>
+
+    let a = prompt('Please enter number a')
+    let b = prompt('Please enter number b')
+
+    function giai_pt_bac_nhat(a, b) {
+        if (a == 0 && b == 0){
+            alert('Phương trình vô số nghiệm');
+        }
+        else if (a != 0 && b == 0){
+            alert('Phương trình có nghiệm x = 0');
+        }
+        else if (a == 0 && b != 0){
+            alert("Phương trình vô nghiệm");
+        }
+        else {
+            alert('Phương trình có nghiệm x = ' + (-b/a));
+        }
+    }
+    giai_pt_bac_nhat(a, b);
+    </script>
+</body>
+</html>

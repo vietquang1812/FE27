@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai6</title>
+</head>
+<body>
+    
+    <script>
+        let num = prompt('Please a number');
+        num = parseInt(num);
+
+        function sumNumber(num) {
+        if(isNaN(num) && num < 0) {
+            alert('Number is not valid');
+        } else {
+            let n = num + 50;
+            console.log(n);
+            let sum = 0;
+            for (let i = num; i <= n; i++) {
+            sum = sum + i;
+            }
+            console.log(sum)
+            alert('Tong cua 50 so tiep theo la: ' + sum);
+        }
+        }
+
+        sumNumber(num);
+    </script>
+</body>
+</html>
