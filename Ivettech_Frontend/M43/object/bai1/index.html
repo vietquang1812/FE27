@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<style>
+			input[name='gender'] + span:before {
+				content: 'Female';
+				margin-left: 5px;
+			}
+			input[name='gender']:checked + span:before {
+				content: 'Male';
+			}
+		</style>
+		<title>Bai 1 - Object</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="card mt-3">
+				<div class="card-header">
+					<h3 class="card-title">Ho dan</h3>
+				</div>
+				<div class="card-body">
+					<div class="row">
+						<div class="col-6">
+							<input
+								type="text"
+								class="form-control"
+								id="address"
+								placeholder="Address"
+							/>
+						</div>
+						<div class="col-4">
+							<button type="button" class="btn btn-primary" id="add_household">
+								Submit
+							</button>
+							<button
+							type="button"
+							id="update_household"
+							class="btn btn-warning d-none"
+						>
+							Update
+						</button>
+						</div>
+					</div>
+				</div>
+				<div class="card mt-3">
+					<div class="card-header">
+						<h3 class="card-title">Nguoi</h3>
+					</div>
+					<div class="card-body">
+						<div class="row">
+							<div class="col-2">
+								<select name="" id="houseHold" class="form-control">
+									<option value="" disabled hidden selected>
+										Please Select HD
+									</option>
+								</select>
+							</div>
+							<div class="col-3">
+								<input
+									type="text"
+									class="form-control"
+									id="fullName"
+									placeholder="Full Name"
+								/>
+							</div>
+							<div class="col-1">
+								<label>
+									<input type="checkbox" name="gender" id="gender" /><span></span>
+								</label>
+							</div>
+							<div class="col-3">
+								<input
+									type="text"
+									class="form-control"
+									id="relationship"
+									placeholder="Relationship"
+								/>
+							</div>
+							<div class="col-3">
+								<input type="date" class="form-control" id="birthday" />
+							</div>
+							<div class="col-3 mt-4">
+								<input
+									type="text"
+									class="form-control"
+									id="job"
+									placeholder="Job"
+								/>
+							</div>
+							<div class="col-4">
+								<button
+									type="button"
+									class="btn btn-primary mt-4"
+									id="add_people"
+								>
+									Add
+								</button>
+								<button
+									type="button"
+									id="update_people"
+									class="btn btn-warning mt-4 d-none"
+								>
+									Update
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card mt-3">
+					<div class="card-header">
+						<h3 class="card-title">Danh sach ho dan</h3>
+					</div>
+					<div class="card-body">
+						<table class="table mt-4">
+							<thead>
+								<tr>
+									<th>No.</th>
+									<th>Address</th>
+									<th>Number</th>
+									<th>
+										Detail
+									</th>
+									<th>Action</th>
+								</tr>
+							</thead>
+							<tbody id="app"></tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>

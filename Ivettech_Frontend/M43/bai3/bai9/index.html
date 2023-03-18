@@ -1,0 +1,76 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/bai3/css/bootstrap.min.css" />
+		<title>Bai 9</title>
+		<style>
+			.container {
+				padding-right: 10px;
+				margin: 0 auto;
+				box-sizing: border-box;
+			}
+			h2 {
+				text-transform: capitalize;
+				font-size: 30px;
+				color: #0be881;
+				margin-bottom: 20px;
+				font-weight: 700;
+			}
+			#name {
+				margin-left: 10px;
+				border-radius: 5px;
+				width: 200px;
+				height: 30px;
+				color: #000;
+				opacity: 1;
+			}
+
+			span {
+				font-weight: 700;
+				color: #ff3f34;
+			}
+
+			.btn-submit {
+				margin-top: 10px;
+				text-transform: capitalize;
+				padding: 5px 5px;
+				width: 100px;
+				height: 50px;
+				border-radius: 10px;
+				background-color: #ff5e57;
+				color: #fff;
+				font-weight: 700;
+				cursor: pointer;
+				text-align: center;
+				align-items: center;
+			}
+			
+			h3 {
+				color: #32a80f;
+				margin-top: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<form class="container" id="form">
+			<div>
+				<h2>Print name of people</h2>
+			</div>
+			<label>
+				Họ và tên:
+				<input type="input" id="name" placeholder="Nhập họ và tên" /> </label
+			><br />
+			<span id="message"></span><br />
+			<button class="btn-submit" type="submit" onclick="nameCapitalize()">
+				Submit</button
+			><br />
+			<h3 id="result"></h3>
+		</form>
+		<script src="index.js"></script>
+	</body>
+</html>

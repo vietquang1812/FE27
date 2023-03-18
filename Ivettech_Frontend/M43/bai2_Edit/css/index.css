@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row {
+  width: 60%;
+}
+
+.form-control {
+  margin-top: 30px;
+}
+
+.btn-primary {
+  width: 100px;
+  height: 50px;
+  padding: 10px;
+  text-align: center;
+  background-color: #3c8400;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.btn-warning {
+  width: 100px;
+  height: 50px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 700;
+  margin-left: 20px;
+  background-color: #E53935;
+  color: #fff
+}

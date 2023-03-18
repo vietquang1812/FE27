@@ -1,0 +1,117 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/bai1/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="/bai2/css/index.css" />
+		<title>Bai 2 - Javascript - Form</title>
+		<style>
+			#resultTotal {
+				color: red;
+				margin-left: 20px;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="" id="form">
+			<div class="container" id="container">
+				<div class="row align-items-center">
+					<label class="col-3">Order ID</label>
+					<div class="col-8">
+						<input
+							type="text"
+							id="orderId"
+							name="orderId"
+							placeholder="Please enter Order Id"
+							class="form-control"
+						/>
+						<p class="text-danger" id="orderId_error">
+							<span>*</span>
+						</p>
+					</div>
+				</div>
+				<div class="row align-items-center">
+					<label class="col-3">Name</label>
+					<div class="col-8">
+						<input
+							type="text"
+							id="name"
+							name="name"
+							placeholder="Please enter name"
+							class="form-control"
+						/>
+						<p class="text-danger" id="name_error">
+							<span>*</span>
+						</p>
+					</div>
+				</div>
+				<div class="row align-items-center">
+					<label class="col-3">Price</label>
+					<div class="col-8">
+						<input
+							type="text"
+							id="price"
+							name="price"
+							placeholder="Please enter price"
+							class="form-control"
+						/>
+						<p class="text-danger" id="price_error">
+							<span>*</span>
+						</p>
+					</div>
+				</div>
+				<div class="row align-items-center">
+					<label class="col-3">Quantity</label>
+					<div class="col-8">
+						<input
+							type="text"
+							id="quantity"
+							name="quantity"
+							placeholder="Please enter quantity"
+							class="form-control"
+						/>
+						<p class="text-danger" id="quantity_error">
+							<span>*</span>
+						</p>
+					</div>
+				</div>
+
+				<button
+					type="submit"
+					id="submit"
+					class="btn btn-primary mt-2 mb-4 p-6"
+					onclick="addProduct()"
+				>
+					Submit
+				</button>
+				<br />
+				<table class="table" id="render">
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>Name</th>
+							<th>Price</th>
+							<th>Quantity</th>
+							<th>Total</th>
+							<th>Actions</th>
+						</tr>
+					</thead>
+				</table>
+				<table>
+					<tr>
+						<td><p>Total amount:</p></td>
+						<td>
+							<p id="resultTotal"></p>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</form>
+		<script src="index.js"></script>
+	</body>
+</html>
